@@ -1,0 +1,172 @@
+runtime: python312
+
+handlers:
+
+- url: /static
+  static_dir: static
+  secure: always
+
+- url: /favicon\.ico
+  static_files: static/favicon.ico
+  upload: static/favicon\.ico
+  secure: always
+  
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /wavenumber(.*)
+  static_files: static/wavenumber-wavelength/index.htm
+  upload: static/wavenumber-wavelength/index.htm
+  mime_type: text/html; charset=UTF-8  
+  secure: always  
+
+- url: /kwh-hp(.*)
+  static_files: static/kwh-hp/index.htm
+  upload: static/kwh-hp/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /mah-hours(.*)
+  static_files: static/mah-hours/index.htm
+  upload: static/mah-hours/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+  
+- url: /wh-w(.*)
+  static_files: static/wh-w/index.htm
+  upload: static/wh-w/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /w-wh(.*)
+  static_files: static/w-wh/index.htm
+  upload: static/w-wh/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /ah-wh(.*)
+  static_files: static/ah-wh/index.htm
+  upload: static/ah-wh/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /ah-w
+  static_files: static/ah-w/index.htm
+  upload: static/ah-w/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /ah-h
+  static_files: static/ah-h/index.htm
+  upload: static/ah-h/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always   
+ 
+- url: /a-ma(.*)
+  static_files: static/a-ma/index.htm
+  upload: static/a-ma/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /ah-mah(.*)
+  static_files: static/ah-mah/index.htm
+  upload: static/ah-mah/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /mwh-mah(.*)
+  static_files: static/mwh-mah/index.htm
+  upload: static/mwh-mah/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /a-v-w/boscSm(.*)
+  static_files: static/a-v-w/boscSm.jpg
+  upload: static/a-v-w/boscSm.jpg
+  mime_type: image/png
+  secure: always
+  
+- url: /a-v-w(.*)
+  static_files: static/a-v-w/index.htm
+  upload: static/a-v-w/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /v-a-mah(.*)
+  static_files: static/v-a-mah/index.htm
+  upload: static/v-a-mah/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /a-h-mAh(.*)
+  static_files: static/a-h-mAh/index.htm
+  upload: static/a-h-mAh/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /volts(.*)
+  static_files: static/volts/index.htm
+  upload: static/volts/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /amps(.*)
+  static_files: static/amps/index.htm
+  upload: static/amps/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /ohms(.*)
+  static_files: static/ohms/index.htm
+  upload: static/ohms/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /gears/GearEnglish(.*)
+  static_files: static/gears/GearEnglish.png
+  upload: static/gears/GearEnglish.png
+  mime_type: image/png
+  secure: always
+  
+- url: /gears/GearSpanish(.*)
+  static_files: static/gears/GearSpanish.png
+  upload: static/gears/GearSpanish.png
+  mime_type: image/png
+  secure: always
+  
+- url: /gears(.*)
+  static_files: static/gears/index.htm
+  upload: static/gears/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /engranajes(.*)
+  static_files: static/gears/index_spanish.htm
+  upload: static/gears/index_spanish.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /reserve-capacity-amp-hours(.*)
+  static_files: static/reserve-capacity-amp-hours/index.htm
+  upload: static/reserve-capacity-amp-hours/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /deductible-coinsurance(.*)
+  static_files: static/deductible-coinsurance/index.htm
+  upload: static/deductible-coinsurance/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+  
+- url: /ads(.*)
+  static_files: ads.txt
+  upload: ads.txt
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /.*
+  script: index.htm
+  secure: always

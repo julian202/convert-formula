@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gear Calculations</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Gear Calculation, pitch, module, teeth">
+<meta name="keywords" content="Gear Calculation pitch module teeth">
+<meta name="author" content="Gear Calculation pitch module teeth">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	text-align:center; /*this is need to center tables in internet explorer.*/
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+div {
+	margin: 10px;
+}
+td{
+	padding: 3px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+img {
+	vertical-align:middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input{
+	text-align:center;
+	font-size:1.1em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+hr{
+	border-top: 1px dotted lightgray;
+	margin: 19px 0px;
+}
+.inputDiv{
+	display: inline-block;
+	margin: 4px 0px 0px 0px;
+}
+.lightGrayDiv{
+	display: inline-block;
+	background-color: #ededed;
+	border-radius: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 14px;
+}
+.calcTitleDiv{
+	margin-bottom: 0px;
+}
+.calculateBtnDiv{
+	display: inline-block;
+	margin: 0px;
+}
+.calculateBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+	padding: 2px 4px;
+}
+.clearBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 2px;
+}
+.thinTopMargin{
+	margin-top: 0px;
+}
+.thinMarginDiv{
+	margin: 5px;
+}
+.thinLabelDiv{
+	margin: 4px 0px 0px 0px; 
+}
+.boxeddiv{
+	border-color: #73AD21;
+    //border-style: solid;
+	border-width: thin;
+    border-radius: 5px;
+	padding-top: 3px;
+    padding-bottom: 6px;
+	margin-bottom: 15px;
+}
+.clearValues{
+	font-size:0.8em;
+	margin-top: 3px;
+}
+.upper {margin-top: 0px;}
+.header {margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; }
+.feedback{font-size:0.8em}
+.ad {margin: 40px;}
+</style>
+</head>
+<body>
+
+<div>
+	<input size="5" id="Dedendum1" onfocus="Clear2Ids('Dedendum1','Module1')" type="text"> = 1.167 x <input size="5" id="Module1" onfocus="Clear2Ids('Dedendum1','Module1')" type="text"> <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('Dedendum1','Module1',function(a){return 1.167*a},function(a){return a/1.167})">
+</div>
+<div>
+	<p><a href="https://convert-formula.com/">Other Conversions</a></p>
+</div>
+<div class=feedback><p>If you have any suggestions please let us know at: <a target=_top href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp" target=_top>suggestionsfeed@gmail.com</a></p></div>
+<div class=ad>
+</div>
+<script  type="text/javascript">
+function clearValues(){
+	document.getElementById("Dedendum1").value='';	
+	document.getElementById("Module1").value='';	
+	document.getElementById("ToothDepth1").value='';	
+	document.getElementById("Module2").value='';	
+}
+function GetValue(id){
+	var val=document.getElementById(id).value;
+	if (val.includes(",")){
+		val=val.replace(/,/g , ".");
+	}
+	return val;
+}
+function ContainsComma(id){
+	return document.getElementById(id).value.includes(",");
+}
+function ConvertToFixed5String(val,id1,id2){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function ConvertToFixed5String3(val,id1,id2,id3){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2) || ContainsComma(id3)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function Calc2Params(id1,id2,func,invFunc){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	if (a!='' || b!=''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) || !isNaN(b)){
+			if (isNaN(a)){
+				c=func(b);		
+				document.getElementById(id1).value=ConvertToFixed5String(c,id1,id2);		
+			}
+			else if (isNaN(b)){
+				c=invFunc(a);	
+				document.getElementById(id2).value=ConvertToFixed5String(c,id1,id2);	
+			}
+		}
+	}
+}
+
+function Calc3Params(id1,id2,id3,func,invFunc,invFunc2){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	var c=GetValue(id3); 
+	if (a=='' && b!='' && c!=''){
+		b=parseFloat(b);
+		c=parseFloat(c);
+		if (!isNaN(b) && !isNaN(c)){
+			d=func(b,c);		
+			document.getElementById(id1).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b=='' && c!=''){
+		a=parseFloat(a);
+		c=parseFloat(c);
+		if (!isNaN(a) && !isNaN(c)){
+			d=invFunc(a,c);		
+			document.getElementById(id2).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b!='' && c==''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) && !isNaN(b)){
+			d=invFunc2(a,b);		
+			document.getElementById(id3).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+}
+
+function Clear2Ids(id1,id2){
+	if(document.getElementById(id1).value!='' &&
+	document.getElementById(id2).value!='')
+	{
+		document.getElementById(id1).value='';
+		document.getElementById(id2).value='';
+	}
+}
+function Clear3Ids(idOnFocus,id2,id3){
+	// idOnFocus is the one from which this function is called.
+	var v1 = document.getElementById(idOnFocus).value;
+	var v2 = document.getElementById(id2).value;
+	var v3 = document.getElementById(id3).value;
+	// we always clear the input that is in focus:
+	document.getElementById(idOnFocus).value='';
+	// we clear the other 2 only if they BOTH have values
+	if (v2!=''&& v3!=''&& v1!=''){
+		document.getElementById(id2).value='';
+		document.getElementById(id3).value='';
+	}
+}
+	
+</script>
+</body>
+</html>

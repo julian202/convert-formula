@@ -1,0 +1,45 @@
+<style>
+    .spinning-cross {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 9s linear infinite;
+}
+
+.spinning-cross:before,
+.spinning-cross:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #133;
+  background-color: #133;
+}
+
+.spinning-cross:before {
+  width: 40px;
+  height: 10px;
+}
+
+.spinning-cross:after {
+  width: 10px;
+  height: 40px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+<body>
+<div class="spinning-cross"></div>
+
+</body>

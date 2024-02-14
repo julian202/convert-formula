@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calculate Volts (voltage) from Ohms (resistance) and Amps (current)">
+<meta name="keywords" content="Convert,volts,ohms,amps,calculate">
+<title>Calculate Volts (voltage) from Ohms (resistance) and Amps (current)</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-YQQRXHSL5Q');
+</script>
+<style>
+div {
+	text-align:center;
+	margin: 30px;
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+input{
+	text-align:center;
+	font-size:1.3em;
+}
+.divinput{
+	display: inline-block;
+	font-size:1em;
+	margin: 5px 2px 5px 0px;
+}
+
+.header {
+	margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; 
+}
+.calcular {
+	font-size:1.3em;
+	margin-right: 10px;
+}
+.units {
+	font-weight: bold;
+	margin-right: 10px;
+}
+.lower {
+	margin-top: 40px;
+}
+.upper {
+	margin-top: 0px;
+}
+.ad {
+	margin: 40px;
+}
+.feedback {text-align:right;font-size:1em; margin-bottom:0px;margin-top:3px  }
+
+</style>
+</head>
+<body>
+<div class="header" >
+
+</div>
+<div>	
+<h2 class="upper">
+	<span>Calculate Volts (Voltage) from Amps (Current) and Ohms (Resistance)</span>
+</h2>	
+</div>
+<div>
+	<span>Insert the Amps (A) and Ohms below and click on Calculate to obtain the Volts (V).</span>
+</div>	
+<div>
+	<div class="divinput"><input size="8" id="A3" type="text" name="A3"> <span class="units">A</span></div>
+	<div class="divinput"><input size="8" id="R3" type="text" name="R3"> <span class="units">Ohms</span></div>	
+	<div class="divinput"><input type="submit" value="Calculate" onclick="convertVolts();"></div>
+	<div class="divinput"><input size="8" id="V3" type="text" name="V3"> <span class="units">V</span></div>
+</div>
+<div>
+	<span> Formula is V = I * R  or  Voltage (Volts) = Current (Amps) * Resistance (Ohms).</span>
+	<span> For example, if you have 3 Amps and 2 Ohms, then the voltage is 6 Volts .</span>
+</div>	
+<div class="ad">
+
+</div>
+<div>
+<h2 class="lower">
+	<span>Calculate Amps (Current) from Volts (Voltage) and Ohms (Resistance)</span>
+</h2>	
+</div>
+<div>
+	<span>Insert the Volts (V) and Ohms below and click on Calculate to obtain the Amps (A).</span>
+</div>	
+<div>
+	<div class="divinput"><input size="8" id="V2" type="text" name="V2"> <span class="units">V</span></div>
+	<div class="divinput"><input size="8" id="R2" type="text" name="R2"> <span class="units">Ohms</span></div>
+	<div class="divinput"><input type="submit" value="Calculate" onclick="convertAmps();"></div>	
+	<div class="divinput"><input size="8" id="A2" type="text" name="A2"> <span class="units">A</span></div>
+</div>
+<div>
+	<span> Formula is I = V / R.</span>
+	<span> For example, if you have 6 Volts and 2 Ohms, then the resistance is 3 Amps.</span>
+</div>
+<div>
+<h2 class="lower">
+	<span>Calculate Ohms (Resistance) from Amps (Current) and Volts (Voltage)</span>
+</h2>	
+</div>
+<div>
+	<span>Insert the Amps (A) and Volts (V) below and click on Calculate to obtain the Ohms.</span>
+</div>	
+<div>
+	<div class="divinput"><input size="8" id="A" type="text" name="A"> <span class="units">A</span> </div>
+	<div class="divinput"><input size="8" id="V" type="text" name="V"> <span class="units">V</span> </div>
+	<div class="divinput"><input type="submit" value="Calculate" onclick="convertOhms();"></div>	
+	<div class="divinput"><input size="8" id="R" type="text" name="R"> <span class="units">Ohms</span> </div>
+</div>
+<div>
+	<span> Formula is R = V / I.</span>
+	<span> For example, if you have 3 Amps and 6 Volts, then the resistance is 2 Ohms.</span>
+</div>		
+<div>
+<div class="ad">
+
+<!--ad milliamps-watts-Responsive2 -->
+
+
+
+
+</div>
+<div>
+	<p><a href="https://convert-formula.com/">Other Conversions</a></p>
+</div>
+<div class=feedback><p class=feedback>Questions or suggestions? email: <a href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp" >suggestionsfeed@gmail.com</a></p><p class=feedback> For other conversions go to <a href="https://convert-formula.com/">Convert-formula.com</a> </p></div><div class=ad></div>
+<script  type="text/javascript">
+	function convertOhms(){
+		a=document.getElementById("A").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}		
+		b=document.getElementById("V").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}
+		c=b/a;
+		c=c.toString();
+		if ((aContainsComma)||(bContainsComma)){
+			c=c.replace(/\./g , ",");
+		}		
+		document.getElementById("R").value=c;	
+	}
+	function convertAmps(){
+		a=document.getElementById("V2").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}	
+		b=document.getElementById("R2").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}
+		c=a/b;
+		c=c.toString();
+		if ((aContainsComma)||(bContainsComma)){
+			c=c.replace(/\./g , ",");
+		}	
+		document.getElementById("A2").value=c;	
+	}
+	function convertVolts(){
+		a=document.getElementById("R3").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}	
+		b=document.getElementById("A3").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}
+		c=a*b;
+		c=c.toString();
+		if ((aContainsComma)||(bContainsComma)){
+			c=c.replace(/\./g , ",");
+		}	
+		document.getElementById("V3").value=c;	
+	}
+</script>
+</body>
+</html>

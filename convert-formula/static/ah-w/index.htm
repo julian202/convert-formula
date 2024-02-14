@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Convert Amp hours to Watts (Ah to W)">
+<meta name="keywords" content="Convert,Amp hour,Amphour,Watts,Ah,W)">
+<title>Convert Amp hours to Watts (Ah to W)</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-ZE12K92R5V');
+</script>
+<style>
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.w3-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-main,#main{transition:margin-left .4s}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+.w3-responsive{display:block;overflow-x:auto}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%}.w3-col.s4{width:33.33333%}
+.w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
+.w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
+@media (min-width:601px){.w3-col.m1{width:8.33333%}.w3-col.m2{width:16.66666%}.w3-col.m3,.w3-quarter{width:24.99999%}.w3-col.m4,.w3-third{width:33.33333%}
+.w3-col.m5{width:41.66666%}.w3-col.m6,.w3-half{width:49.99999%}.w3-col.m7{width:58.33333%}.w3-col.m8,.w3-twothird{width:66.66666%}
+.w3-col.m9,.w3-threequarter{width:74.99999%}.w3-col.m10{width:83.33333%}.w3-col.m11{width:91.66666%}.w3-col.m12{width:99.99999%}}
+@media (min-width:993px){.w3-col.l1{width:8.33333%}.w3-col.l2{width:16.66666%}.w3-col.l3{width:24.99999%}.w3-col.l4{width:33.33333%}
+.w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
+.w3-col.l9{width:74.99999%}.w3-col.l10{width:83.33333%}.w3-col.l11{width:91.66666%}.w3-col.l12{width:99.99999%}}
+.w3-rest{overflow:hidden}.w3-stretch{margin-left:-16px;margin-right:-16px}
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}.w3-auto{max-width:1140px}
+.w3-cell-row{display:table;width:100%}.w3-cell{display:table-cell}
+.w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
+.w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.w3-auto{max-width:95%}}
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
+.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+@media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-tiny{font-size:10px!important}.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
+.w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}.w3-xxxlarge{font-size:48px!important}.w3-jumbo{font-size:64px!important}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+
+
+.divinput{
+	display: inline-block;
+	font-size:1em;
+	margin: 5px 2px 5px 0px;
+}
+
+.mainContent{
+	font-size:1.3em;
+	margin: 22px 5px 35px 5px;
+}
+input{
+	text-align:center;
+}
+.units {
+	font-weight: bold;
+	margin-right: 10px;
+	margin-left: 4px;
+}
+.divLarge {
+	margin: 20px;
+	font-size:1.2em;
+}
+.homeTitle {
+    text-align: left;
+    margin: 15px 10px 1px 10px;
+    color: #009688;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: italic;
+}
+.related {
+	margin: 10px;
+}
+.myHr{
+	margin:15px
+}
+.feedback {text-align:left;font-size:0.8em;margin-top: 15px; }
+
+</style>
+</head>
+<body>
+
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <div class="homeTitle">Convert-Formula.com</div>
+  <hr class="myHr">
+  <div class="related">Related:</div>
+  <a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
+  <a href="https://milliamps-watts.appspot.com" class="w3-bar-item w3-button">mAh to Wh</a>
+  <a href="https://convert-formula.com/mwh-mah/#inv" class="w3-bar-item w3-button">mAh to mWh</a>
+  <a href="https://convert-formula.com" class="w3-bar-item w3-button">Other</a>
+</div>
+
+<div class="w3-main" style="margin-left:200px">
+	<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+		<h1>Convert Amp hours to Watts (Ah to W)</h1>
+	  </div>
+	</div>
+
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+				<span>Insert the Amp hours (<b>Ah</b>), voltage (<b>V</b>) and time in hours (<b>h</b>) below and click on Calculate to obtain Watts (W).</span>
+			</div>	
+			<div class="divLarge">
+				<div class="divinput"><input size="5" id="ah" type="text" name="ah"><label class="units" for="ah">Ah</label></div>
+				<div class="divinput"><input size="5" id="volts" type="text" name="V"><label class="units" for="volts">V</label></div>
+				<div class="divinput"><input size="5" id="hours" type="text" name="hours"><label class="units" for="hours">h</label></div>
+				<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>	
+				<div class="divinput"><input size="6" id="watts" type="text" name="watts"><label class="units" for="watts">W</label></div>
+			</div>
+			<div>
+				<span> The formula is (Ah)*(V)/(h) = (W).</span>
+				<span> For example, if you have a 2 Ah battery rated at 5 Volts that lasts for 2 hours, the wattage is 2Ah * 5V / 2h = 5W.</span>
+			</div>	
+			<div class="feedback">
+				<a href="https://convert-formula.com/">Click here for other conversions</a>. If you have any suggestions please let us know at: <a target="top" href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp">suggestionsfeed@gmail.com</a> 
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<div class="ad">
+<!-- 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous"></script>
+<!-- Convert-formula ah-wh 1 -->
+<!-- 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6051400083837233"
+     data-ad-slot="9228110108"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+</div>	
+<script>
+	function convert(){
+		a=document.getElementById("ah").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}		
+		b=document.getElementById("volts").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}
+		c=document.getElementById("hours").value;
+		cContainsComma=c.includes(",");
+		cContainsDot=c.includes(".");	
+		if (cContainsComma){
+			//alert("contains commma");
+			c=c.replace(/,/g , ".");
+		}
+		d=(a*b)/c;
+		d=d.toFixed(3);
+		d=d.toString();
+		if ((aContainsComma)||(bContainsComma)){
+			d=d.replace(/\./g , ",");
+		}		
+		if(!isNaN(d)){
+			document.getElementById("watts").value=d;
+		}		
+	}
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	}
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	}
+</script>
+</body>
+</html>

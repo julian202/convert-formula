@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reserve capacity to amp hours</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Convert reserve capacity to amp hours">
+<meta name="keywords" content="Convert reserve capacity to amp hours">
+<meta name="author" content="Convert reserve capacity to amp hours">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-JJ80TPV1L6');
+  
+  
+  // AdWords conversion tag. See further down for another gtag for conversion realization.
+  //gtag('config', 'AW-996101594');
+</script>
+<!-- Google Ads Adsense-->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous">
+</script>-->
+<!-- Event snippet for Clicked on Calculate Button of Reserve Capacity Site conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+/*
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+		if (typeof(url) != 'undefined') {
+		  window.location = url;
+		}
+	  };
+	  gtag('event', 'conversion', {
+		  'send_to': 'AW-996101594/z1ZjCIu9uIYDENqb_doD',
+		  'event_callback': callback
+	  });
+	  return false;
+	}
+	*/
+</script>
+<style>
+body {
+	text-align:center; /*this is need to center tables in internet explorer.*/
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+div {
+	margin: 10px;
+}
+td{
+	padding: 3px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+img {
+	vertical-align:middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input{
+	text-align:center;
+	font-size:1.1em;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 6px;
+}
+.inputDiv{
+	display: inline-block;
+	margin: 4px 0px 0px 0px;
+}
+.lightGrayDiv{
+	display: inline-block;
+	background-color: #ededed;
+	border-radius: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 14px;
+}
+.calcTitleDiv{
+	margin-bottom: 0px;
+}
+.calculateBtnDiv{
+	display: inline-block;
+	margin: 0px;
+}
+.calculateBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+}
+.thinTopMargin{
+	margin-top: 0px;
+}
+.thinMarginDiv{
+	margin: 5px;
+}
+.thinLabelDiv{
+	margin: 4px 0px 0px 0px; 
+}
+
+.boxeddiv{
+	border-color: black;
+	border-width: thin;
+    border-radius: 5px;
+	padding-top: 3px;
+    padding-bottom: 6px;
+	margin-bottom: 5px;
+	box-shadow: 0px 0px 34px 0px #888888;
+	border-style: solid;
+}
+.clearValues{
+	font-size:0.8em;
+	margin-top: 3px;
+}
+.upper {margin-top: 18px;margin-bottom: 18px;}
+.header {margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; }
+.feedback{font-size:0.8em;margin-top: 12px;}
+.ad {margin: 40px;}
+</style>
+</head>
+<body>
+<div class="boxeddiv">
+	<div>
+		<h2 class="upper"><span>Battery Reserve Capacity to Amp hours</span></h2>	
+	</div>
+	<div>
+		The <b>Reserve Capacity</b> is the amount of time that a battery can run at 25 Amps until its voltage drops to 10.5 volts. Reserve Capacity is measured in minutes.
+	</div>
+	<div>
+		<b>Reserve Capacity = 2.4 x Amp hours</b> (The 2.4 comes from 60 minutes in an hour divided by 25 Amps, 60/25 = 2.4) 
+	</div>
+	<div style="margin-bottom:13px">
+		Below you can convert Reserve Capacity (in minutes) to Amp hours and vice versa:
+	</div>		
+	<div class="thinTopMargin">
+		<div class="lightGrayDiv">
+			<div class="inputDiv">
+				<div class="thinLabelDiv">	
+					<label for="ReserveCapacity">Reserve Capacity</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="ReserveCapacity" onfocus="Clear2Ids('ReserveCapacity','Amphours')" type="text">	
+				</div>		
+			</div>		
+			<div class="calculateBtnDiv">
+				<input type="submit" value="Calculate &rArr;" class="calculateBtn" onclick="Calc2Params('ReserveCapacity','Amphours',function(a){return a},function(a){return a/2.4})">		
+			</div>
+			<div class="inputDiv">
+				<div class="thinLabelDiv">	
+					<label for="Amphours">Amp hours</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Amphours" type="text" readonly>	
+				</div>		
+			</div>
+		</div>		
+
+		<div class="lightGrayDiv">
+			<div class="inputDiv">
+				<div class="thinMarginDiv">	
+					<label for="Amphours2">Amp hours</label>	
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Amphours2" onfocus="Clear2Ids('Amphours2','ReserveCapacity2')"  type="text">
+				</div>		
+			</div>		
+			<div class="calculateBtnDiv">
+				<input type="submit" value="Calculate &rArr;" class="calculateBtn" onclick="Calc2Params('Amphours2','ReserveCapacity2',function(a){return a},function(a){return 2.4*a})">		
+			</div>
+			<div class="inputDiv">
+				<div class="thinMarginDiv">	
+					<label for="ReserveCapacity2">Reserve Capacity</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="ReserveCapacity2" type="text" readonly>	
+				</div>		
+			</div>
+		</div>		
+	</div>		
+</div>
+<div class="feedback">
+	<a href="https://convert-formula.com/">Click here for other conversions</a>.<span> If you have any suggestions please let us know at: <a target="top" href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp">suggestionsfeed@gmail.com</a> </span>
+</div>
+<div class="ad">
+</div>
+<script>
+
+function clearValues(){
+	document.getElementById("Dedendum1").value='';	
+	document.getElementById("Module1").value='';	
+	document.getElementById("ToothDepth1").value='';	
+	document.getElementById("Module2").value='';	
+}
+function GetValue(id){
+	var val=document.getElementById(id).value;
+	if (val.includes(",")){
+		val=val.replace(/,/g , ".");
+	}
+	return val;
+}
+function ContainsComma(id){
+	return document.getElementById(id).value.includes(",");
+}
+function ConvertToFixed5String(val,id1,id2){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function ConvertToFixed5String3(val,id1,id2,id3){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2) || ContainsComma(id3)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function Calc2Params(id1,id2,func,invFunc){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	if (a!='' || b!=''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) || !isNaN(b)){
+			if (isNaN(a)){
+				c=func(b);		
+				document.getElementById(id1).value=ConvertToFixed5String(c,id1,id2);		
+			}
+			else if (isNaN(b)){
+				c=invFunc(a);	
+				document.getElementById(id2).value=ConvertToFixed5String(c,id1,id2);	
+			}
+		}
+	}
+	//gtag_report_conversion();
+}
+
+function Calc3Params(id1,id2,id3,func,invFunc,invFunc2){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	var c=GetValue(id3); 
+	if (a=='' && b!='' && c!=''){
+		b=parseFloat(b);
+		c=parseFloat(c);
+		if (!isNaN(b) && !isNaN(c)){
+			d=func(b,c);		
+			document.getElementById(id1).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b=='' && c!=''){
+		a=parseFloat(a);
+		c=parseFloat(c);
+		if (!isNaN(a) && !isNaN(c)){
+			d=invFunc(a,c);		
+			document.getElementById(id2).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b!='' && c==''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) && !isNaN(b)){
+			d=invFunc2(a,b);		
+			document.getElementById(id3).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+}
+
+function Clear2Ids(id1,id2){
+	if(document.getElementById(id1).value!='' &&
+	document.getElementById(id2).value!='')
+	{
+		document.getElementById(id1).value='';
+		document.getElementById(id2).value='';
+	}
+}
+function Clear3Ids(idOnFocus,id2,id3){
+	// idOnFocus is the one from which this function is called.
+	var v1 = document.getElementById(idOnFocus).value;
+	var v2 = document.getElementById(id2).value;
+	var v3 = document.getElementById(id3).value;
+	// we always clear the input that is in focus:
+	document.getElementById(idOnFocus).value='';
+	// we clear the other 2 only if they BOTH have values
+	if (v2!=''&& v3!=''&& v1!=''){
+		document.getElementById(id2).value='';
+		document.getElementById(id3).value='';
+	}
+}
+	
+</script>
+</body>
+</html>

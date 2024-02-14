@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gear Calculations</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Gear Calculation, pitch, module, teeth">
+<meta name="keywords" content="Gear Calculation pitch module teeth">
+<meta name="author" content="Gear Calculation pitch module teeth">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-GWVJLZVK36');
+</script>
+<style>
+body {
+	text-align:center; /*this is need to center tables in internet explorer.*/
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+div {
+	margin: 10px;
+}
+td{
+	padding: 3px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+img {
+	vertical-align:middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input{
+	text-align:center;
+	font-size:1.1em;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+hr{
+	border-top: 1px dotted lightgray;
+	margin: 19px 0px;
+}
+.inputDiv{
+	display: inline-block;
+	margin: 4px 0px 0px 0px;
+}
+.lightGrayDiv{
+	display: inline-block;
+	background-color: #ededed;
+	border-radius: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 14px;
+}
+.calcTitleDiv{
+	margin-bottom: 0px;
+}
+.calculateBtnDiv{
+	display: inline-block;
+	margin: 0px;
+}
+.calculateBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+	padding: 2px 4px;
+}
+.clearBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 2px;
+}
+.thinTopMargin{
+	margin-top: 0px;
+}
+.thinMarginDiv{
+	margin: 5px;
+}
+.thinLabelDiv{
+	margin: 4px 0px 0px 0px; 
+}
+.boxeddiv{
+	border-color: #73AD21;
+    //border-style: solid;
+	border-width: thin;
+    border-radius: 5px;
+	padding-top: 3px;
+    padding-bottom: 6px;
+	margin-bottom: 15px;
+}
+.clearValues{
+	font-size:0.8em;
+	margin-top: 3px;
+}
+.upper {margin-top: 0px;}
+.header {margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; }
+.feedback{font-size:0.8em}
+.ad {margin: 40px;}
+</style>
+</head>
+<body>
+<div class="header" >
+	<a href="https://convert-formula.com/engranajes">Spanish</a>
+</div>
+<div>
+	<h2 class="upper"><span>Gear Calculations</span></h2>	
+</div>
+<img src="gears/GearEnglish.png"></img>
+<div>
+	Module = Addendum
+</div>
+<hr>
+<div id="1">
+	Dedendum = 1.167 x Module
+</div>
+<div>
+	<input size="5" id="Dedendum1" onfocus="Clear2Ids('Dedendum1','Module1')" type="text"> = 1.167 x <input size="5" id="Module1" onfocus="Clear2Ids('Dedendum1','Module1')" type="text"> <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('Dedendum1','Module1',function(a){return 1.167*a},function(a){return a/1.167})">
+</div>
+<hr>	
+<div id="2">
+	Tooth Depth = 2.167 x Module
+</div>
+<div>
+	<input size="5" id="ToothDepth1" onfocus="Clear2Ids('ToothDepth1','Module2')" type="text"> = 2.167 x <input size="5" id="Module2" onfocus="Clear2Ids('ToothDepth1','Module2')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('ToothDepth1','Module2',function(a){return 2.167*a},function(a){return a/2.167})">	
+</div>
+<hr>
+<div id="3">
+	Radius of Tooth Root = 0.3 x Module
+</div>
+<div>
+	<input size="5" id="Radius1" onfocus="Clear2Ids('Radius1','Module3')" type="text"> = 0.3 x <input size="5" id="Module3" onfocus="Clear2Ids('Radius1','Module3')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('Radius1','Module3',function(a){return 0.3*a},function(a){return a/0.3})">	
+</div>
+<hr>
+<div id="4">
+	Pitch = Distance between teeth + Tooth thickness
+</div>
+<div>
+	<input size="5" id="Pitch1"  onfocus="Clear3Ids('Pitch1','DistBetwTeeth1','ToothThickn1')" type="text"> = <input size="5" id="DistBetwTeeth1" onfocus="Clear3Ids('DistBetwTeeth1','Pitch1','ToothThickn1')" type="text"> + <input size="5" id="ToothThickn1"  onfocus="Clear3Ids('ToothThickn1','Pitch1','DistBetwTeeth1')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('Pitch1','DistBetwTeeth1','ToothThickn1',function(b,c){return (b+c)},function(a,c){return a-c},function(a,b){return a-b})">	
+</div>
+<hr>
+<div id="5">
+	Distance between teeth = 0.5 x Pitch
+</div>
+<div>
+	<input size="5" id="DistBetwTeeth2"  onfocus="Clear2Ids('DistBetwTeeth2','Pitch2')" type="text"> =	0.5 x <input size="5" id="Pitch2"  onfocus="Clear2Ids('DistBetwTeeth2','Pitch2')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('DistBetwTeeth2','Pitch2',function(a){return 0.5*a},function(a){return a/0.5});">	
+</div>
+<hr>
+<div id="6">
+	Tooth thickness = 0.5 x Pitch
+</div>
+<div>
+	<input size="5" id="ToothThickn2"  onfocus="Clear2Ids('ToothThickn2','Pitch3')" type="text"> =	0.5 x <input size="5" id="Pitch3"  onfocus="Clear2Ids('ToothThickn2','Pitch3')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('ToothThickn2','Pitch3',function(a){return 0.5*a},function(a){return a/0.5})">	
+</div>
+<hr>
+<div id="7">
+	Circular Pitch = Pi x Module
+</div>
+<div>
+	<input size="5" id="Pitch4"  onfocus="Clear2Ids('Pitch4','Module4')" type="text"> =	Pi x <input size="5" id="Module4"  onfocus="Clear2Ids('Pitch4','Module4')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('Pitch4','Module4',function(a){return 3.14159*a},function(a){return a/3.14159});">	
+</div>
+<hr>
+<div id="8">
+	Diametral Pitch = 25.4 / Module
+</div>
+<div>
+	<input size="5" id="Pitch5"  onfocus="Clear2Ids('Pitch5','Module5')" type="text"> =	25.4 / <input size="5" id="Module5"  onfocus="Clear2Ids('Pitch5','Module5')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc2Params('Pitch5','Module5',function(a){return 25.4/a},function(a){return 25.4/a})">	
+</div>
+<hr>
+<div id="9">
+	Reference Diameter = Module x Number of Teeth
+</div>
+<div>
+	<input size="5" id="Diameter1"  onfocus="Clear3Ids('Diameter1','Module6','NumTeeth1')" type="text"> = <input size="5" id="Module6"  onfocus="Clear3Ids('Module6','Diameter1','NumTeeth1')" type="text"> x <input size="5" id="NumTeeth1"  onfocus="Clear3Ids('NumTeeth1','Module6','Diameter1')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('Diameter1','Module6','NumTeeth1',function(b,c){return (b*c)},function(a,c){return a/c},function(a,b){return a/b})">	
+</div>
+<hr>
+<div id="10">
+	Reference Diameter = (Pitch / Pi) x Number of Teeth
+</div>
+<div>
+	<input size="5" id="Diameter2"  onfocus="Clear3Ids('Diameter2','Pitch6','NumTeeth2')" type="text"> = (<input size="5" id="Pitch6"  onfocus="Clear3Ids('Pitch6','Diameter2','NumTeeth2'))" type="text"> / Pi) x <input size="5" id="NumTeeth2"  onfocus="Clear3Ids('NumTeeth2','Pitch6','Diameter2')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('Diameter2','Pitch6','NumTeeth2',function(b,c){return ((b*c)/3.14159)},function(a,c){return (a*3.14159)/c},function(a,b){return (a*3.14159)/b})">	
+</div>
+<hr>
+<div id="11">
+	Tip Diameter = Reference Diameter + 2 x Module
+</div>
+<div>
+	<input size="5" id="TipDiameter"  onfocus="Clear3Ids('TipDiameter','Diameter3','Module7')" type="text"> = <input size="5" id="Diameter3"  onfocus="Clear3Ids('Diameter3','TipDiameter','Module7')" type="text"> + 2 x <input size="5" id="Module7"  onfocus="Clear3Ids('Module7','Diameter3','TipDiameter')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('TipDiameter','Diameter3','Module7',function(b,c){return (b+2*c)},function(a,c){return (a-2*c)},function(a,b){return ((a-b)/2)})">	
+</div>
+<hr>
+<div id="12">
+	Tip Diameter = Module x (Number of Teeth + 2)
+</div>
+<div>
+	<input size="5" id="TipDiameter2"  onfocus="Clear3Ids('TipDiameter2','Module8','NumTeeth3')" type="text"> =	<input size="5" id="Module8"  onfocus="Clear3Ids('Module8','TipDiameter2','NumTeeth3')" type="text"> x (<input size="5" id="NumTeeth3"  onfocus="Clear3Ids('NumTeeth3','Module8','TipDiameter2')" type="text">+2)  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('TipDiameter2','Module8','NumTeeth3',function(b,c){return (b*(c+2))},function(a,c){return (a/(c+2))},function(a,b){return ((a/b)-2)})">	
+</div>
+<hr>
+<div id="13">
+	Root Diameter = Reference Diameter - 2.5 x Module
+</div>
+<div>
+	<input size="5" id="RootDiam"  onfocus="Clear3Ids('RootDiam','Diameter4','Module9'))" type="text"> = <input size="5" id="Diameter4"  onfocus="Clear3Ids('Diameter4','RootDiam','Module9')" type="text"> - 2.5 x <input size="5" id="Module9"  onfocus="Clear3Ids('Module9','Diameter4','RootDiam')" type="text">  <input type="submit" value="Calculate" class="calculateBtn" onclick="Calc3Params('RootDiam','Diameter4','Module9',function(b,c){return (b-(2.5*c))},function(a,c){return (a+2.5*c)},function(a,b){return ((b-a)/2.5)})">	
+</div>
+<hr>
+
+<div>
+	<span> 	</span>
+</div>	
+<div>
+	<p><a href="https://convert-formula.com/">Other Conversions</a></p>
+</div>
+<div class=feedback><p>If you have any suggestions please let us know at: <a target=_top href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp" target=_top>suggestionsfeed@gmail.com</a></p></div>
+<div class=ad>
+</div>
+<script  type="text/javascript">
+function clearValues(){
+	document.getElementById("Dedendum1").value='';	
+	document.getElementById("Module1").value='';	
+	document.getElementById("ToothDepth1").value='';	
+	document.getElementById("Module2").value='';	
+}
+function GetValue(id){
+	var val=document.getElementById(id).value;
+	if (val.includes(",")){
+		val=val.replace(/,/g , ".");
+	}
+	return val;
+}
+function ContainsComma(id){
+	return document.getElementById(id).value.includes(",");
+}
+function ConvertToFixed5String(val,id1,id2){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function ConvertToFixed5String3(val,id1,id2,id3){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2) || ContainsComma(id3)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function Calc2Params(id1,id2,func,invFunc){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	if (a!='' || b!=''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) || !isNaN(b)){
+			if (isNaN(a)){
+				c=func(b);		
+				document.getElementById(id1).value=ConvertToFixed5String(c,id1,id2);		
+			}
+			else if (isNaN(b)){
+				c=invFunc(a);	
+				document.getElementById(id2).value=ConvertToFixed5String(c,id1,id2);	
+			}
+		}
+	}
+}
+
+function Calc3Params(id1,id2,id3,func,invFunc,invFunc2){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	var c=GetValue(id3); 
+	if (a=='' && b!='' && c!=''){
+		b=parseFloat(b);
+		c=parseFloat(c);
+		if (!isNaN(b) && !isNaN(c)){
+			d=func(b,c);		
+			document.getElementById(id1).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b=='' && c!=''){
+		a=parseFloat(a);
+		c=parseFloat(c);
+		if (!isNaN(a) && !isNaN(c)){
+			d=invFunc(a,c);		
+			document.getElementById(id2).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+	else if (a!='' && b!='' && c==''){
+		a=parseFloat(a);
+		b=parseFloat(b);
+		if (!isNaN(a) && !isNaN(b)){
+			d=invFunc2(a,b);		
+			document.getElementById(id3).value=ConvertToFixed5String3(d,id1,id2,id3);
+		}
+	}
+}
+
+function Clear2Ids(id1,id2){
+	if(document.getElementById(id1).value!='' &&
+	document.getElementById(id2).value!='')
+	{
+		document.getElementById(id1).value='';
+		document.getElementById(id2).value='';
+	}
+}
+function Clear3Ids(idOnFocus,id2,id3){
+	// idOnFocus is the one from which this function is called.
+	var v1 = document.getElementById(idOnFocus).value;
+	var v2 = document.getElementById(id2).value;
+	var v3 = document.getElementById(id3).value;
+	// we always clear the input that is in focus:
+	document.getElementById(idOnFocus).value='';
+	// we clear the other 2 only if they BOTH have values
+	if (v2!=''&& v3!=''&& v1!=''){
+		document.getElementById(id2).value='';
+		document.getElementById(id3).value='';
+	}
+}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Convert watthours to watts (Wh to W). Calculate watts from watthours.">
+<meta name="keywords" content="Convert, watthours, watts, hours, Wh, W, calculate">
+<title>Convert Wh to W (Watthours to Watts)</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-GD0MPP1455');
+</script>
+<style>
+body { font-size: 120%; }
+div {text-align:center;margin: 22px;font-family: Arial,"Times New Roman",Georgia,Serif;}
+div.boxeddiv{
+	border-color: #73AD21;
+    border-style: solid;
+	border-width: thin;
+    border-radius: 5px;
+	max-width: 500px;
+    margin: auto;
+}
+div.numb{
+    margin: 8px;
+}
+input {text-align:center;font-size:1.3em;margin-bottom:5px;margin-top:5px;}
+input.result {padding-left: 1em;}
+.units {font-weight:bold;margin-right: 10px;margin-left: 5px;}
+.upper {margin-top: 0px;font-size: 155%;}
+.ad {margin: 40px;}
+.feedback{text-align:right;font-size: 1em}
+</style>
+</head>
+<body>
+<div>
+<h1 class="upper">
+	<span>Convert Wh to W (watthours to watts)</span>
+</h1>	
+</div>
+<div>
+	<span>  To convert <strong>Wh</strong> to <strong>W</strong>, you need to divide the number of <strong>Watthours</strong> by the number of <strong>hours</strong>:</span>
+</div>
+<div>
+	First, fill in this box with your <strong>Wh</strong>:
+</div>
+<div class=boxeddiv>
+	<div class=numb><input size="8" id="Wh" type="text" name="Wh"> <span class="units">Wh</span></div> 
+</div>
+<div>
+	<span>Then fill in this box with the duration in <strong>hours</strong> and click on <strong>Calculate</strong></span>
+</div>
+<div class=boxeddiv>
+	<div class=numb>Duration: <input size="8" id="hours" type="text" name="hours"> <span class="units">hours</span></div>
+</div>
+<div>
+	<input type="submit" value="Calculate" onclick="convert();">
+</div>
+<div>
+	<input class=result size="14" id="Watts" type="text" name="Watts"> <span class="units">Watts</span> 
+</div>
+
+<div>
+	<span> The formula is (Wh)/(h) = (W). For example, if you have 100 Wh for a duration of 2 hours, then the wattage is (100)/(2) = (50) Watts.</span>
+	<div><span> (Watthours is a measure of energy and watts is a unit of power. Power multiplied by time is enery).</span></div>
+</div>	
+<div class="ad">
+	
+</div>	
+<div>
+
+<div class="feedback">	
+<p>
+Got feedback? email: <a href="mailto:suggestionsfeed@gmail.com?Subject=Convert-mAh-h" >suggestionsfeed@gmail.com</a>
+</p>
+</div>	
+
+<div class="ad">
+	
+</div>
+<script  type="text/javascript">
+	function convertold(){document.getElementById("hours").value=(document.getElementById("mAh").value)/(1000*document.getElementById("Amps").value);}
+	function convert2old(){document.getElementById("hours2").value=(document.getElementById("mAh").value*document.getElementById("Volts").value)/(1000*document.getElementById("Watts").value);}
+	
+	function convert(){
+		a=document.getElementById("Wh").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}		
+		b=document.getElementById("hours").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}
+		c=a/(b);
+		c=c.toString();
+		if ((aContainsComma)||(bContainsComma)){
+			c=c.replace(/\./g , ",");
+		}		
+		document.getElementById("Watts").value=c;	
+	}
+	
+	/// Old Google Universal Analytics////////
+	//Wh-W
+	//(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	//(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	//m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	//})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	//ga('create', 'UA-35951944-21', 'auto');
+	//ga('send', 'pageview');
+</script>
+</body>
+</html>

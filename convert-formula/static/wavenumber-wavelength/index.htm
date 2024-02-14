@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wave number to wavelength</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Convert wave number to wavelength formula">
+<meta name="keywords" content="Convert,wave number,wavelength,formula">
+<meta name="author" content="Convert wave number to wavelength formula">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-9L1624HXXR');
+</script>
+<style>
+body {
+	text-align:center; /*this is need to center tables in internet explorer.*/
+	margin: 30px;
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+div {
+	margin: 10px;
+}
+td{
+	padding: 3px;
+}
+img {
+	vertical-align:middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input{
+	text-align:center;
+	font-size:1.1em;
+	margin-left: 2px;
+	margin-right: 8px;
+}
+.boxeddiv{
+	border-color: #73AD21;
+    border-style: solid;
+	border-width: thin;
+    border-radius: 5px;
+	padding-top: 3px;
+    padding-bottom: 6px;
+	margin-bottom: 15px;
+}
+.header {margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; }
+.feedback{font-size:0.8em}
+.ad {margin: 40px;}
+</style>
+</head>
+<body>
+<div>
+	<h2><span>How to convert wavenumber and wavelength</span></h2>	
+</div>
+<div>
+	<span>It depends on whether it's for general physics or for chemistry/spectroscopy:</span>
+</div>
+<div>
+	<span>For chemistry/spectroscopy: </span><img src="https://convert-formula.com/static/wavenumber-wavelength/formula2.svg" width="90px">
+	<span>while for general physics: </span><img src="https://convert-formula.com/static/wavenumber-wavelength/formula1.svg" width="90px">
+</div>
+<div class="boxeddiv">
+	<div>
+		<span>For: </span><img src="https://convert-formula.com/static/wavenumber-wavelength/formula2.svg" width="90px">
+	</div>
+	<div>
+		Insert wavelength or wavenumber and press calculate to obtain the other one:
+	</div>	
+	<div>
+		<table style="width: 100%;">
+		<tr>
+		<td style="text-align:right;">Wavelength:</td><td style="text-align:left;"><input size="8" id="wavelength" type="text"></td>
+		</tr>
+		<tr>
+		<td style="text-align:right;">Wavenumber:</td><td style="text-align:left;"><input size="8" id="wavenumber" type="text"></td>
+		</tr>	
+		</table>
+	</div>	
+	
+	<div>
+		<input type="submit" value="Calculate" onclick="convertWithoutPi();"><input type="submit" value="Clear Values" onclick="clearValues();">
+	</div>
+</div>
+<div class="boxeddiv">
+	<div>
+		<span>For: </span><img src="https://convert-formula.com/static/wavenumber-wavelength/formula1.svg" width="90px">
+	</div>
+	<div>
+		Insert wavelength or wavenumber and press calculate to obtain the other one:
+	</div>	
+	<div>
+		<table style="width: 100%;">
+		<tr>
+		<td style="text-align:right;">Wavelength:</td><td style="text-align:left;"><input size="8" id="wavelength2" type="text"></td>
+		</tr>
+		<tr>
+		<td style="text-align:right;">Wavenumber:</td><td style="text-align:left;"><input size="8" id="wavenumber2" type="text"></td>
+		</tr>	
+		</table>
+	</div>	
+	
+	<div>
+		<input type="submit" value="Calculate" onclick="convertWithPi();"><input type="submit" value="Clear Values" onclick="clearValues();">
+	</div>
+</div>
+<div>
+	<span> The units will be the inverse of wavenumber, for example, if your units for wavenumber is nm<sup>-1</sup>, the units for wavelength is nm.</span>
+</div>	
+<div>
+	<p><a href="https://convert-formula.com/">Other Conversions</a></p>
+</div>
+<div class=feedback><p>If you have any suggestions please let us know at: <a target=_top href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp" target=_top>suggestionsfeed@gmail.com</a></p></div>
+<div class=ad>
+</div>
+<script  type="text/javascript">
+
+	function clearValues(){
+		document.getElementById("wavenumber").value='';	
+		document.getElementById("wavelength").value='';	
+		document.getElementById("wavenumber2").value='';	
+		document.getElementById("wavelength2").value='';	
+	}
+
+	function convertWithoutPi(){
+		a=document.getElementById("wavelength").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}		
+		b=document.getElementById("wavenumber").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}			
+		if (b==''){
+			if (a==''){
+				//alert("Field must not be empty.");
+			}
+			else{
+				c=1/a;
+				c=c.toFixed(5);
+				c=c.toString();
+				if ((aContainsComma)){
+					c=c.replace(/\./g , ",");
+				}
+				document.getElementById("wavenumber").value=c;	
+			}
+		}
+		else if (a==''){
+			if (b==''){
+				//alert("Field must not be empty.");
+			}
+			else{
+				c=1/b;
+				c=c.toFixed(5);
+				c=c.toString();
+				if ((bContainsComma)){
+					c=c.replace(/\./g , ",");
+				}
+				document.getElementById("wavelength").value=c;	
+			}
+		}			
+	}
+
+	function convertWithPi(){
+		a=document.getElementById("wavelength2").value;
+		aContainsComma=a.includes(",");
+		aContainsDot=a.includes(".");	
+		if (aContainsComma){
+			//alert("contains commma");
+			a=a.replace(/,/g , ".");
+		}		
+		b=document.getElementById("wavenumber2").value;
+		bContainsComma=b.includes(",");
+		bContainsDot=b.includes(".");	
+		if (bContainsComma){
+			//alert("contains commma");
+			b=b.replace(/,/g , ".");
+		}			
+		if (b==''){
+			if (a==''){
+				alert("Field must not be empty.");
+			}
+			else{
+				c=2*3.14159/a;
+				c=c.toFixed(5);
+				c=c.toString();
+				if ((aContainsComma)){
+					c=c.replace(/\./g , ",");
+				}
+				document.getElementById("wavenumber2").value=c;	
+			}
+		}
+		else if (a==''){
+			if (b==''){
+				alert("Field must not be empty.");
+			}
+			else{
+				c=2*3.14159/b;
+				c=c.toFixed(5);
+				c=c.toString();
+				if ((bContainsComma)){
+					c=c.replace(/\./g , ",");
+				}
+				document.getElementById("wavelength2").value=c;	
+			}
+		}				
+	}
+	
+</script>
+</body>
+</html>

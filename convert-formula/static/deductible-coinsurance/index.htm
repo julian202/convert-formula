@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Deductible and Coinsurance Calculator</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Deductible and Coinsurance Calculator">
+<meta name="keywords" content="Deductible Coinsurance Calculator">
+<meta name="author" content="Deductible Coinsurance Calculator">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+  // Property/Stream for this specific page:
+  gtag('config', 'G-WLQ9V2BZKS');
+  
+  // AdWords conversion tag. See further down for another gtag for conversion realization.
+  //gtag('config', 'AW-996101594');
+</script>
+<!-- Google Ads Adsense-->
+<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous">
+</script>-->
+<!-- Event snippet for Website traffic conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+	/*
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+		if (typeof(url) != 'undefined') {
+		  window.location = url;
+		}
+	  };
+	  gtag('event', 'conversion', {
+		  'send_to': 'AW-996101594/MmPGCOnUn4YDENqb_doD',
+		  'event_callback': callback
+	  });
+	  return false;
+	}
+	*/
+</script>	
+<style>
+body {
+	text-align:center; /*this is need to center tables in internet explorer.*/
+	font-size:1.3em;
+	font-family: Arial, "Times New Roman", Georgia, Serif;
+}
+div {
+	margin: 10px;
+}
+td{
+	padding: 3px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+img {
+	vertical-align:middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input{
+	text-align:center;
+	font-size:1.1em;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 6px;
+}
+.inputDiv{
+	display: inline-block;
+	margin: 4px 0px 0px 0px;
+}
+.lightGrayDiv{
+	display: inline-block;
+	background-color: #ededed;
+	border-radius: 6px;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 14px;
+}
+.calcTitleDiv{
+	margin-bottom: 0px;
+}
+.calculateBtnDiv{
+	display: inline-block;
+	margin: 0px;
+}
+.calculateBtn{
+	border-radius: 5px;
+    border-width: thin;
+	margin-top: 5px;
+	font-size: 1.15em;
+	background-color: #c2d4e4;
+}
+.clearBtn{
+	border-radius: 5px;
+    border-width: thin;
+	background-color: #c2d4e4;
+	font-size: 1.0em;
+}
+.thinTopMargin{
+	margin-top: 0px;
+}
+.thinMarginDiv{
+	margin: 5px;
+}
+.thinLabelDiv{
+	margin: 4px 0px 0px 0px; 
+}
+.margin2{
+	margin: 23px; 
+}
+.margin3{
+	margin: 15px; 
+}
+
+.boxeddiv{
+	border-color: lightgrey;
+	border-style: solid;
+
+    border-radius: 15px;
+	padding-top: 3px;
+	margin-bottom: 15px;
+}
+
+.clearValues{
+	font-size:0.8em;
+	margin-top: 3px;
+}
+.header {margin-right: 40px; margin-top: 10px;margin-bottom: 0px;text-align:right; }
+.feedback{font-size:0.8em;margin: 15px;}
+.ad {margin: 40px;}
+</style>
+</head>
+<body>
+<div class="boxeddiv">
+	<div>
+		<h2 class="upper"><span>Deductible and Coinsurance Calculator</span></h2>	
+	</div>
+	<div style="margin-bottom:13px">
+		In the boxes below, enter the "Fee", the "Remaining Deductible" and the "Coinsurance" and click on the "Calculate" button to obtain the owed amount.
+	</div>	
+	<div style="margin-bottom:13px">
+	</div>	
+	<div class="thinTopMargin">
+		<div class="lightGrayDiv">
+			<div class="inputDiv">
+				<div class="thinLabelDiv">	
+					<label for="Fee">Fee</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Fee" onfocus="ClearId('Fee')" type="text">	
+				</div>		
+			</div>		
+			<div class="inputDiv">
+				<div class="thinLabelDiv">	
+					Remaining
+				</div>
+				<div class="thinLabelDiv">	
+					<label for="Deductible">Deductible</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Deductible" onfocus="ClearId('Deductible')" type="text">	
+				</div>		
+			</div>
+			<div class="inputDiv">
+				<div class="thinLabelDiv">	
+					<label for="Coinsurance">Coinsurance %</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Coinsurance" onfocus="ClearId('Coinsurance')" type="text">	
+				</div>		
+			</div>
+			<div class="calculateBtnDiv">
+				<input type="submit" value="Calculate &rArr;" class="calculateBtn" onclick="CalcOwed('Fee','Deductible','Coinsurance','Owed',
+				function(a,b,c){
+				if(b>a){
+					b=a;
+				}
+				return (b+(c/100)*(a-b))})">		
+			</div>
+			<div class="inputDiv">
+				<div class="thinMarginDiv">	
+					<label for="Owed">Amount Owed</label>
+				</div>
+				<div class="thinMarginDiv">	
+					<input size="8" id="Owed" type="text" readonly>	
+				</div>		
+			</div>
+			<input type="submit" value="Clear All Values" class="clearBtn" onclick="ClearAll()">
+		</div>		
+	</div>	
+	For example, if Fee = $2000, Remaining Deductible = $1000, and Coinsurance = 20%, then the owed amount is $1000 + 20% of ($2000-$1000) which is $1200.
+<div>
+	<p  class="feedback"><a href="https://convert-formula.com/">Click here for other conversions</a>.<span> If you have any suggestions please let us know at: <a target="top" href="mailto:suggestionsfeed@gmail.com?Subject=Convert-kwh-hp">suggestionsfeed@gmail.com</a> </span></p>
+</div>
+</div>
+<div class="ad">
+</div>
+<script  type="text/javascript">
+
+
+function GetValue(id){
+	var containsThousandComma = false;
+	var val=document.getElementById(id).value;
+	val=val.replace(/\$/g , "");
+	i=val.indexOf(",");
+	if (i>0){
+		//alert(i);
+		//alert(val.length);
+		CommaPosFromLast = val.length - i;
+		//alert(CommaPosFromLast);
+		if(CommaPosFromLast>3){
+			//alert("thousand");
+			containsThousandComma = true;
+		}
+	}
+	if(!containsThousandComma){
+		val=val.replace(/,/g , ".");
+	}
+	else{
+		val=val.replace(/,/g , "");
+	}
+	return val;
+}
+function ContainsComma(id){
+	return document.getElementById(id).value.includes(",");
+}
+function ConvertToFixed2String(val){
+	val=val.toFixed(2);
+	val=val.toString();
+	return val;
+}
+function ConvertToFixed5String3(val,id1,id2,id3){
+	val=val.toFixed(5);
+	val=val.toString();
+	if (ContainsComma(id1) || ContainsComma(id2) || ContainsComma(id3)){
+		val=val.replace(/\./g , ",");
+	}	
+	return val;
+}
+function CalcOwed(id1,id2,id3,id4,func){
+	var a=GetValue(id1); 
+	var b=GetValue(id2); 
+	var c=GetValue(id3); 
+	b=b.replace(/\$/g , "");
+	c=c.replace(/\$/g , "");
+	if (a!='' && c!=''){
+		a=parseFloat(a);
+		if (b=='') {
+			b=0;
+		}
+		else{
+			b=parseFloat(b);
+		}
+		c=parseFloat(c);
+		if (!isNaN(a) && !isNaN(b) && !isNaN(c)){
+			d=func(a,b,c);		
+			document.getElementById(id4).value=ConvertToFixed2String(d);		
+		}
+		else{
+			document.getElementById(id4).value="bad inputs";
+		}
+	}
+	else{
+		document.getElementById(id4).value="bad inputs";
+	}
+	//gtag_report_conversion();
+}
+function ClearAll(){
+	document.getElementById('Fee').value='';
+	document.getElementById('Deductible').value='';
+	document.getElementById('Coinsurance').value='';
+	document.getElementById('Owed').value='';
+}
+
+function ClearId(id1){
+
+//	if(document.getElementById(id1).value!='')
+//	{
+//		document.getElementById(id1).value='';
+//	}
+
+}
+
+function Clear2Ids(id1,id2){
+	if(document.getElementById(id1).value!='' &&
+	document.getElementById(id2).value!='')
+	{
+		document.getElementById(id1).value='';
+		document.getElementById(id2).value='';
+	}
+}
+function Clear3Ids(idOnFocus,id2,id3){
+	// idOnFocus is the one from which this function is called.
+	var v1 = document.getElementById(idOnFocus).value;
+	var v2 = document.getElementById(id2).value;
+	var v3 = document.getElementById(id3).value;
+	// we always clear the input that is in focus:
+	document.getElementById(idOnFocus).value='';
+	// we clear the other 2 only if they BOTH have values
+	if (v2!=''&& v3!=''&& v1!=''){
+		document.getElementById(id2).value='';
+		document.getElementById(id3).value='';
+	}
+}
+	
+</script>
+</body>
+</html>
