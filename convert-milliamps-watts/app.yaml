@@ -1,14 +1,11 @@
-runtime: php55
-api_version: 1
-threadsafe: yes
+runtime: nodejs20
 
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /
-  script: index.php
-  
-- url: /(.*)
-  script: \1
+- url: /.*
+  static_files: index.htm
+  upload: index.htm
+  secure: always
