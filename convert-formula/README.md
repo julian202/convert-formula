@@ -1,2 +1,0 @@
-# convert-formula
-by Juliano

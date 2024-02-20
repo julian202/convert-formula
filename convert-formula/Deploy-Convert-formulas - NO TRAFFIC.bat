@@ -5,5 +5,5 @@ cd C:\Program Files (x86)\Google\Cloud SDK
 ECHO Welcome to the Google Cloud SDK! Run "gcloud -h" to get the list of available commands.
 ECHO ---
 ECHO ON
-gcloud app deploy "C:\Users\julia\OneDrive\App Engine and More\convert-formula\app.yaml" --project convert-formulas --no-promote
+gcloud app deploy "C:\Users\julia\OneDrive\App Engine and More\convert-formula\FilesToDeploy\app.yaml" --project convert-formulas --no-promote --verbosity info 
 pause
