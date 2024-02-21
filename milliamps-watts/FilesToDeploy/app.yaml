@@ -5,6 +5,10 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /ads.txt
+  static_files: ads.txt
+  upload: ads.txt
+
 - url: /.*
   static_files: index.htm
   upload: index.htm
