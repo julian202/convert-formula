@@ -6,4 +6,4 @@ ECHO Welcome to the Google Cloud SDK! Run "gcloud -h" to get the list of availab
 ECHO ---
 ECHO ON
 gcloud app deploy "C:\Users\julia\OneDrive\App Engine and More\milliamps-watts\FilesToDeploy\app.yaml" --project milliamps-watts --no-promote --verbosity info
-pause
+PAUSE
