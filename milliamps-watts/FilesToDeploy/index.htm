@@ -51,7 +51,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 html,body{font-family:Arial,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+h1{font-size:28px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
@@ -64,7 +64,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
 .w3-main,#main{transition:margin-left .4s}
-.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:5px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
 .w3-responsive{display:block;overflow-x:auto}
 .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
@@ -133,17 +133,16 @@ input{
     font-style: italic;
 }
 .related {
-	margin: 10px;
+	margin: 10px; color: #009688;  font-weight: bold;
 }
 .myHr{
 	margin:15px
 }
-.feedback {text-align:right;color: #009688;font-size:0.9em; margin-bottom:0px;margin-top:5px  }
+.feedback {text-align:right;color: #009688;font-size:1em; margin-bottom:0px;margin-top:5px  }
 
 </style>
 </head>
 <body>
-
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
 	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
@@ -152,7 +151,12 @@ input{
 	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
 	<a href="https://milliamps-watts.appspot.com" class="w3-bar-item w3-button">mAh to Wh</a>
 	<a href="https://convert-formula.com/mwh-mah/#inv" class="w3-bar-item w3-button">mAh to mWh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<div class="related">Language:</div>
+	<a href="https://convertir-miliamperios-vatios.appspot.com" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
+	<a href="https://convertir-milliamperes-watts.appspot.com" class="w3-bar-item w3-button">Français</a>
+
+
 	<!-- Convert-Formula-Vertical -->
 	<ins class="adsbygoogle"
      style="display:block"
@@ -168,7 +172,7 @@ input{
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-    	<h2>Convert mAh to Watt hours</h2>
+    	<h1>How to convert mAh to Watt hours</h1>
 	  </div>
 	</div>
 
@@ -184,7 +188,7 @@ input{
             	<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">Wh</span> </div>
 			</div>
 			<div>
-            	<span> Formula is (mAh)*(V)/1000 = (Wh).</span>
+            	<span> The formula is (mAh)*(V)/1000 = (Wh).</span>
 	            <span> For example, if you have a 300mAh battery rated at 5V, the power is 300mAh * 5V / 1000 = 1.5Wh.</span>
 			</div>	
 			<div class="ad">
@@ -195,7 +199,7 @@ input{
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-       	<h2>Convert Watt hours to mAh</h2>
+       	<h1>How to convert Watt hours to mAh</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
