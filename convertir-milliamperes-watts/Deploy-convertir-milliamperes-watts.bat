@@ -5,6 +5,6 @@ cd C:\Program Files (x86)\Google\Cloud SDK
 ECHO Welcome to the Google Cloud SDK! Run "gcloud -h" to get the list of available commands.
 ECHO ---
 ECHO ON
-gcloud app deploy "C:\Users\julia\OneDrive\App Engine and More\convertir-milliamperes-watts\FilesToDeploy\app.yaml" --project convertir-milliamperes-watts --verbosity info
+gcloud app deploy "C:\Users\julia\OneDrive\App Engine and More\convertir-milliamperes-watts\my-nodejs-service\app.yaml" --project convertir-milliamperes-watts --verbosity info
 
 
