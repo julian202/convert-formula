@@ -47,9 +47,21 @@ handlers:
   mime_type: text/html; charset=UTF-8
   secure: always
   
-- url: /mah-wh/fr
+- url: /mah-wh/es(.*)
+  static_files: static/mah-wh/index_es.htm
+  upload: static/mah-wh/index_es.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+  
+- url: /mah-wh/fr(.*)
   static_files: static/mah-wh/index_fr.htm
   upload: static/mah-wh/index_fr.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+  
+- url: /mah-wh(.*)
+  static_files: static/mah-wh/index.htm
+  upload: static/mah-wh/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always  
 
