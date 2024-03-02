@@ -65,6 +65,12 @@ handlers:
   mime_type: text/html; charset=UTF-8
   secure: always  
   
+- url: /mah-wh/ja(.*)
+  static_files: static/mah-wh/index_ja.htm
+  upload: static/mah-wh/index_ja.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+  
 - url: /mah-wh(.*)
   static_files: static/mah-wh/index.htm
   upload: static/mah-wh/index.htm
