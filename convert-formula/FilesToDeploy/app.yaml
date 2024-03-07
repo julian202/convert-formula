@@ -70,7 +70,13 @@ handlers:
   upload: static/mah-wh/index_ja.htm
   mime_type: text/html; charset=UTF-8
   secure: always  
-  
+
+- url: /mah-wh/zh(.*)
+  static_files: static/mah-wh/index_zh.htm
+  upload: static/mah-wh/index_zh.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
+
 - url: /mah-wh(.*)
   static_files: static/mah-wh/index.htm
   upload: static/mah-wh/index.htm
