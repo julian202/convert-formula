@@ -83,12 +83,18 @@ handlers:
   mime_type: text/html; charset=UTF-8
   secure: always  
 
+- url: /ah-wh/es(.*)
+  static_files: static/ah-wh/index_es.htm
+  upload: static/ah-wh/index_es.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
 - url: /ah-wh(.*)
   static_files: static/ah-wh/index.htm
   upload: static/ah-wh/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always
-
+  
 - url: /ah-w
   static_files: static/ah-w/index.htm
   upload: static/ah-w/index.htm
