@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Convert Amp hour to Watt hour (Ah to Wh)">
-<meta name="keywords" content="Convert,Amp hour,Amphour,Watt hour,Watthour,Ah,Wh)">
+<meta name="description" content="Convertir des Ampères-heures Ah en Watt-heures Wh. Calculer la puissance en Watt-heures a partir de Ampères-heures">
+<meta name="keywords" content="Convertir,ah,Wh,watt-heures, ampères-heures, calculer">
+<meta name="author" content="Convertir des Ah en Watts heures">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
-<title>Convert Amp hour to Watt hour (Ah to Wh)</title>
+<link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+<title>Convertir des Ampères-heures (Ah) en Watt-heures (Wh)</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -16,8 +18,6 @@
   gtag('js', new Date());
   // General Property/Stream:	
   gtag('config', 'G-H2GV6PCN36');
-  // Property/Stream for this specific page:
-  gtag('config', 'G-6WB503Z9YQ');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
      crossorigin="anonymous"></script>
@@ -138,14 +138,13 @@ input{
 	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
-	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
-	<a href="https://convert-formula.com/mah-wh" class="w3-bar-item w3-button">mAh to Wh</a>
-	<a href="https://convert-formula.com/mwh-mah/#inv" class="w3-bar-item w3-button">mAh to mWh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other</a>
-    <div class="related">Language:</div>
+	<div class="related">Conversions:</div>
+	<a href="https://convert-formula.com/mah-wh/fr" class="w3-bar-item w3-button">mAh-Wh</a>
+	<a href="https://convert-formula.com/mwh-mah/#inv" class="w3-bar-item w3-button">mAh-mWh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">D'autres conversions</a>
+	<div class="related">Language:</div>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">English</a>
 	<a href="https://convert-formula.com/ah-wh/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
-	<a href="https://convert-formula.com/ah-wh/fr" class="w3-bar-item w3-button">Français</a>
 	<!-- Convert-Formula-Vertical -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:400px"
@@ -155,70 +154,66 @@ input{
 		 (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </div>
-
 <div class="w3-main" style="margin-left:205px">
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-    	<h1>How to convert Amp hour to Watt hour (Ah to Wh)</h1>
+	  	<h1>Convertir des Ampères-heures (Ah) en Watt-heures (Wh)</h1>
 	  </div>
 	</div>
 
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-	            <span>Insert the Amp hours (Ah) and voltage (V) below and click on Calculate to obtain Watt hours (Wh).</span>
+				<span>Introduisez Ampères-heures (mAh) et Voltage (V) et cliquez sur "Calculer" pour obtenir Watt-heures (Wh).</span>
 			</div>	
 			<div>
 	            <div class="divinput"><input size="8" id="Ah" type="text" name="Ah"> <span class="units">Ah</span> </div>
             	<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span> </div>
-            	<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>	
-            	<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">Wh</span> </div>
+            	<div class="divinput"><input type="submit" value="Calculer" onclick="convert();"></div>	
+            	<div class="divinput"><input size="8" id="watts" type="text" name="Wh"> <span class="units">Wh</span> </div>
 			</div>
 			<div>
-            	<span> The formula is (Ah)*(V) = (Wh).</span>
-	            <span> For example, if you have a 2 Ah battery rated at 5 V, the power is 2Ah * 5V = 10Wh.</span>
+            	<span> La formule est (Ah)*(V) = (Wh).</span>
+	            <span> Par exemple, si vous avez 2Ah et 5V, vous obtiendrez 2Ah * 5V = 10Wh.</span>
 			</div>	
-			<div class="ad">
-
-			</div>
 		</div>
 	</div>
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-       	<h1>How to convert Watt hour to Amp hour (Wh to Ah)</h1>
+       	<h1>Convertir des Watt-heures (Wh) en Ampères-heures (Ah)</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-            	<span>Insert Watts-hour (Wh) and voltage (V) below and click on Calculate to obtain Amp-hours (Ah).</span>
+            	<span>Introduisez Watt-heure (Wh) et Voltage (V) et cliquez sur "Calculer" pour obtenir Ampères-heures (Ah).</span>
 			</div>	
 			<div>
 	            <div class="divinput"><input size="8" id="watts2" type="text" name="Wh"> <span class="units">Wh</span></div>
 	            <div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span></div>
-	            <div class="divinput"><input type="submit" value="Calculate" onclick="convert2();"></div>	
+	            <div class="divinput"><input type="submit" value="Calculer" onclick="convert2();"></div>	
 	            <div class="divinput"><input size="8" id="Ah2" type="text" name="Ah"> <span class="units">Ah</span></div>
 			</div>
 			<div>
-             	<span> The formula is (Wh)/(V) = (Ah).</span>
-            	<span> For example, if you have a 10Wh battery rated at 5V, the current is 10Wh / 5V = 2Ah.</span>
+             	<span> La formule est (Wh)/(V) = (Ah).</span>
+            	<span> Par exemple, si vous avez 10Wh et 5V, vous obtiendrez 10Wh / 5V = 2Ah.</span>
 			</div>
-		</div>	
-	<!-- Convert-Formula -->
-	<ins class="adsbygoogle"
-		 style="display:block"
-		 data-ad-client="ca-pub-6051400083837233"
-		 data-ad-slot="3557395571"
-		 data-ad-format="auto"
-		 data-full-width-responsive="true"></ins>
-	<script>
-		 (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	</div>
+		</div>
+		<!-- Convert-Formula -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-6051400083837233"
+			 data-ad-slot="3557395571"
+			 data-ad-format="auto"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>		
+	</div>	
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-ah-wh">convertformula@gmail.com</a></p></div>	
+	<div class=feedback><p class=feedback>Si vous avez des suggestions écrivez à: <a href="mailto:convertformula@gmail.com?Subject=Convert-ah-wh_fr">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">
@@ -239,7 +234,7 @@ input{
 		}
 		c=a*b;
 		c=c.toString();
-		if ((aContainsComma)||(bContainsComma)){
+		if ((!aContainsDot)&&(!bContainsDot)){
 			c=c.replace(/\./g , ",");
 		}		
 		document.getElementById("watts").value=c;	
@@ -261,7 +256,7 @@ input{
 		}
 		c=a/b;
 		c=c.toString();
-		if ((aContainsComma)||(bContainsComma)){
+		if ((!aContainsDot)&&(!bContainsDot)){
 			c=c.replace(/\./g , ",");
 		}	
 		document.getElementById("Ah2").value=c;	
