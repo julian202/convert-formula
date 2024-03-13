@@ -208,6 +208,12 @@ handlers:
   upload: static/deductible-coinsurance/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always  
+
+- url: /styles.css
+  static_files: static/styles.css
+  upload: static/styles.css
+  mime_type: text/html; charset=UTF-8
+  secure: always
   
 - url: /ads(.*)
   static_files: ads.txt
