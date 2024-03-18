@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="将 mAh 转换为瓦时。从毫安时计算瓦时功率">
-<meta name="keywords" content="转换,毫安时,瓦时,计算">
-<meta name="author" content="将 mAh 转换为 瓦时">
-<link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
-<link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
-<link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
-<link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
-<link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
-<link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
-<title>将 mAh 转换为 瓦时</title>
+<meta name="description" content="Ah をワット時へ変換します。アンペア時から電力をワット単位で計算します">
+<meta name="keywords" content="変換、ああ、ワット時、計算、アンペア時"> 
+<meta name="author" content="変換 アンペア時 Ah から ワット時">
+<link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+<link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+<link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+<link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+<link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+<link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+<title>アンペア時 から ワット時へ変換 (Ah から Wh)</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -32,12 +32,12 @@
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
 	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh/zh" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mah-wh/ja" class="w3-bar-item w3-button">Ah to Wh</a>
 	<a href="https://convert-formula.com/mwh-mah/#inv" class="w3-bar-item w3-button">mAh to mWh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">其他转换</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">その他の変換</a>
 	<div class="related">Language:</div>
-	<a href="https://convert-formula.com/mah-wh" class="w3-bar-item w3-button">English</a>
-	<a href="https://convert-formula.com/mah-wh/ja" class="w3-bar-item w3-button">日本語</a>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">English</a>
+	<a href="https://convert-formula.com/ah-wh/zh" class="w3-bar-item w3-button">中文</a>
 	<!-- Convert-Formula-Vertical-Multiplex -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:400px"
@@ -51,23 +51,23 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-    	<h1>如何将毫安时 (mAh) 转换为瓦时 (Wh)</h1>
+    	<h1>アンペア時（Ah）をワット時（Wh）に変換する方法</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-	            <span>在下面插入毫安时 (mAh) 和电压 (V)，然后单击“计算”以获得瓦时 (Wh)。</span>
+	            <span>以下にアンペア時 (Ah) と電圧 (V) を入力し、「計算」をクリックしてワット時 (Wh) を取得します。</span>
 			</div>	
 			<div>
-	            <div class="divinput"><input size="8" id="mAh" type="text" name="mAh"> <span class="units">mAh</span> </div>
+	            <div class="divinput"><input size="8" id="Ah" type="text" name="Ah"> <span class="units">Ah</span> </div>
             	<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span> </div>
-            	<div class="divinput"><input type="submit" value="计算" onclick="convert();"></div>	
-            	<div class="divinput"><input size="8" id="watts" type="text" name="Wh"> <span class="units">Wh</span> </div>
+            	<div class="divinput"><input type="submit" value="計算する" onclick="convert();"></div>	
+            	<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">Wh</span> </div>
 			</div>
 			<div>
-            	<span> 公式为 (mAh)*(V)/1000 = (Wh).</span>
-	            <span> 例如，如果您有一块 5V 时 300mAh 的电池，您将获得 300mAh * 5V / 1000 = 1.5Wh.</span>
+            	<span> 計算式は (Ah)*(V) = (Wh) です。</span>
+				<span> たとえば、5V 定格の 2Ah バッテリーがある場合、次のようになります 2Ah * 5V = 10Wh.</span>
 			</div>	
 			<div class="ad">
 
@@ -77,23 +77,23 @@
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-       	<h1>如何将瓦时 (Wh) 转换为毫安时 (mAh)</h1>
+       	<h1>ワット時（Wh）をアンペア時（Ah）に変換する方法</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-            	<span>在下面插入瓦时 (Wh) 和电压 (V)，然后单击计算以获得毫安时 (mAh)。</span>
+            	<span>以下にワット時 (Wh) と電圧 (V) を入力し、「計算」をクリックしてアンペア時 (Ah) を取得します。</span>
 			</div>	
 			<div>
 	            <div class="divinput"><input size="8" id="watts2" type="text" name="Wh"> <span class="units">Wh</span></div>
 	            <div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span></div>
-	            <div class="divinput"><input type="submit" value="计算" onclick="convert2();"></div>	
-	            <div class="divinput"><input size="8" id="mAh2" type="text" name="mAh"> <span class="units">mAh</span></div>
+	            <div class="divinput"><input type="submit" value="計算する" onclick="convert2();"></div>	
+	            <div class="divinput"><input size="8" id="Ah2" type="text" name="Ah"> <span class="units">Ah</span></div>
 			</div>
 			<div>
-             	<span> 公式为 (Wh)*1000/(V) = (mAh).</span>
-            	<span> 例如，如果 5V 时的电量为 1.5Wh，您将获得 1.5Wh * 1000 / 5V = 300mAh.</span>
+             	<span> 計算式は (Wh)/(V) = (Ah) です。</span>
+				<span> たとえば、5V で 10Wh がある場合、次のようになります 10Wh / 5V = 2Ah.</span>
 			</div>
 		</div>
 		<!-- Convert-Formula -->
@@ -112,7 +112,7 @@
 
 <script  type="text/javascript">
 	function convert(){
-		a=document.getElementById("mAh").value;
+		a=document.getElementById("Ah").value;
 		aContainsComma=a.includes(",");
 		aContainsDot=a.includes(".");	
 		if (aContainsComma){
@@ -126,7 +126,7 @@
 			//alert("contains commma");
 			b=b.replace(/,/g , ".");
 		}
-		c=a*b/1000;
+		c=a*b;
 		c=c.toString();
 		if ((aContainsComma)||(bContainsComma)){
 			c=c.replace(/\./g , ",");
@@ -148,12 +148,12 @@
 			//alert("contains commma");
 			b=b.replace(/,/g , ".");
 		}
-		c=1000*a/b;
+		c=a/b;
 		c=c.toString();
 		if ((aContainsComma)||(bContainsComma)){
 			c=c.replace(/\./g , ",");
 		}	
-		document.getElementById("mAh2").value=c;	
+		document.getElementById("Ah2").value=c;	
 	}
 	function w3_open() {
 	  document.getElementById("mySidebar").style.display = "block";

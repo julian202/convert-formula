@@ -94,6 +94,24 @@ handlers:
   upload: static/ah-wh/index_fr.htm
   mime_type: text/html; charset=UTF-8
   secure: always
+
+- url: /ah-wh/de(.*)
+  static_files: static/ah-wh/index_de.htm
+  upload: static/ah-wh/index_de.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /ah-wh/ja(.*)
+  static_files: static/ah-wh/index_ja.htm
+  upload: static/ah-wh/index_ja.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+
+- url: /ah-wh/zh(.*)
+  static_files: static/ah-wh/index_zh.htm
+  upload: static/ah-wh/index_zh.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always  
   
 - url: /ah-wh(.*)
   static_files: static/ah-wh/index.htm
