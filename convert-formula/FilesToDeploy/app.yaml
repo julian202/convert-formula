@@ -142,6 +142,12 @@ handlers:
   upload: static/ah-mah/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always
+   
+- url: /mwh-mah/es(.*)
+  static_files: static/mwh-mah/index_es.htm
+  upload: static/mwh-mah/index_es.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
   
 - url: /mwh-mah(.*)
   static_files: static/mwh-mah/index.htm
