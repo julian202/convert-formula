@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Convert mWh to mAh and vice versa. (Milliwatt-hours to milliamp-hours)">
-<meta name="keywords" content="Convert, mWh, mAh, hours, milliwatt, milliamps, calculate">
-<meta name="author" content="Convert mWh to mAh">
+<meta name="description" content="Convertir des mWh en mAh. Convertir des mAh en mWh. Calculer milliampères-heures a partir de milliwatt-heures et vice versa">
+<meta name="keywords" content="Convertir, milliampères, milliwatt, mAh, mWh, heures, calculer">
+<meta name="author" content="Convertir des mAh en Watts heures">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
 <link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
-<title>Convert mWh to mAh (milliwatt-hours to milliamp-hours)</title>
+<title>Convertir des milliwatt-heures (mWh) en milliampères-heures (mAh)</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -18,8 +18,6 @@
   gtag('js', new Date());
   // General Property/Stream:	
   gtag('config', 'G-H2GV6PCN36');
-  // Property/Stream for this specific page:
-  gtag('config', 'G-VP8VRCKBE0');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
      crossorigin="anonymous"></script>
@@ -30,13 +28,13 @@
 	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
-	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
-	<a href="https://convert-formula.com/mah-wh/" class="w3-bar-item w3-button">mAh to Wh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<div class="related">Conversions:</div>
+	<a href="https://convert-formula.com/ah-wh/fr" class="w3-bar-item w3-button">Ah en Wh</a>
+	<a href="https://convert-formula.com/mah-wh/fr" class="w3-bar-item w3-button">mAh en Wh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">D'autres conversions</a>
 	<div class="related">Language:</div>
-	<a href="https://convert-formula.com/mwh-mah/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
-	<a href="https://convert-formula.com/mwh-mah/fr" class="w3-bar-item w3-button">Français</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">English</a>
+   <a href="https://convert-formula.com/mwh-mah/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
 	<!-- Convert-Formula-Vertical-Multiplex -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:400px"
@@ -50,46 +48,46 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliwatt-hours (mWh) to milliamp-hours (mAh)</h1>
+	  	<h1>Convertir des milliwatt-heure (mWh) en milliampères-heures (mAh)</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliwatt-hours (mWh) and Voltage (V) and click on Calculate to obtain milliamp-hours (mAh).</span>
+				<span>Introduisez milliwatt-heure (mWh) et voltage (V) et cliquez sur "Calculer" pour obtenir milliampères-heures (mAh).</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="watts2" type="text" name="Wh"> <span class="units">mWh</span></div>
 				<div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span></div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert2();"></div>	
+				<div class="divinput"><input type="submit" value="Calculer" onclick="convert2();"></div>	
 				<div class="divinput"><input size="8" id="mAh2" type="text" name="mAh"> <span class="units">mAh</span></div>
 			</div>
 			<div>
-				<span> The formula is (mWh)/(V) = (mAh).</span>
-				<span> For example, if you have 1500 mWh and a voltage of 5V, you obtain 1500mWh / 5V = 300mAh.</span>
+            	<span> La formule est (mWh)/(V) = (mAh).</span>
+	            <span> Par exemple, si vous avez 1500 mWh et 5V, vous obtiendrez 1500mWh / 5V = 300mAh.</span>
 			</div>	
 		</div>
 	</div>
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliamp-hours (mAh) to milliwatt-hours (mWh)</h1>
+       	<h1>Convertir des milliampères-heures (mAh) en milliwatt-heures (mWh)</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliamp-hours (mAh) and voltage (V) and click on Calculate to obtain milliwatt-hours (mWh).</span>
+            	<span>Introduisez milliampères-heures (mAh) et voltage (V) et cliquez sur "Calculer" pour obtenir milliwatt-heures (mWh).</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="mAh" type="text" name="mAh"> <span class="units">mAh</span> </div>
 				<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span> </div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>	
-				<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">mWh</span> </div>
+				<div class="divinput"><input type="submit" value="Calculer" onclick="convert();"></div>	
+				<div class="divinput"><input size="8" id="watts" type="text" name="Wh"> <span class="units">mWh</span> </div>
 			</div>
 			<div>
-				<span> The formula is (mAh)*(V) = (mWh).</span>
-				<span> For example, if you have a 300mAh battery and a voltage of 5V, you obtain 300mAh * 5V  = 1500 mWh.</span>
+             	<span> La formule est (mAh)*(V) = (mWh).</span>
+            	<span> Par exemple, si vous avez 300mAh et 5V, vous obtiendrez 300mAh * 5V  = 1500 mWh.</span>
 			</div>
 		</div>
 		<!-- Convert-Formula -->
@@ -101,10 +99,10 @@
 			 data-full-width-responsive="true"></ins>
 		<script>
 			 (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
+		</script>		
 	</div>	
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-mwh">convertformula@gmail.com</a></p></div>	
+	<div class=feedback><p class=feedback>Si vous avez des suggestions écrivez à: <a href="mailto:convertformula@gmail.com?Subject=Convert-mwh-mah_fr">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">
@@ -125,7 +123,7 @@
 		}
 		c=a*b;
 		c=c.toString();
-		if ((aContainsComma)||(bContainsComma)){
+		if ((!aContainsDot)&&(!bContainsDot)){
 			c=c.replace(/\./g , ",");
 		}		
 		document.getElementById("watts").value=c;	
@@ -147,7 +145,7 @@
 		}
 		c=a/b;
 		c=c.toString();
-		if ((aContainsComma)||(bContainsComma)){
+		if ((!aContainsDot)&&(!bContainsDot)){
 			c=c.replace(/\./g , ",");
 		}	
 		document.getElementById("mAh2").value=c;	
