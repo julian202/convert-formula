@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Convert mWh to mAh. And mAh to mWh.</title>
-<meta name="description" content="Convert milliwatt-hours to milliamp-hours and vice versa.">
-<meta name="keywords" content="Convert, mWh, mAh, hours, milliwatt, milliamps, calculate">
-<meta name="author" content="Convert mWh to mAh">
+<title>mWh を mAh に変換します。そして、mAhからmWhです。</title>
+<meta name="description" content="ミリワット時からミリアンペア時へ、またはその逆に変換します。">
+<meta name="keywords" content="変換、mWh、mAh、時間、ミリワット、ミリアンペア、計算"> 
+<meta name="author" content="mWh を mAh に変換">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
 <link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
@@ -21,8 +21,6 @@
   gtag('js', new Date());
   // General Property/Stream:	
   gtag('config', 'G-H2GV6PCN36');
-  // Property/Stream for this specific page:
-  gtag('config', 'G-VP8VRCKBE0');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
      crossorigin="anonymous"></script>
@@ -34,13 +32,12 @@
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
 	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
-	<a href="https://convert-formula.com/mah-wh/" class="w3-bar-item w3-button">mAh to Wh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<a href="https://convert-formula.com/ah-wh/ja" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mah-wh/ja" class="w3-bar-item w3-button">mAh to Wh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">その他の変換</a>
 	<div class="related">Language:</div>
-	<a href="https://convert-formula.com/mwh-mah/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
-	<a href="https://convert-formula.com/mwh-mah/fr" class="w3-bar-item w3-button">Français</a>
-	<a href="https://convert-formula.com/mwh-mah/de" class="w3-bar-item w3-button">Deutsch</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">English</a>
+	
 	<!-- Convert-Formula-Vertical-Multiplex -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:400px"
@@ -54,46 +51,46 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliwatt-hours (mWh) to milliamp-hours (mAh)</h1>
+    	<h1>ミリワット時 (mWh) を ミリアンペア時 (mAh) に変換します</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliwatt-hours (mWh) and Voltage (V) and click on Calculate to obtain milliamp-hours (mAh).</span>
+	            <span>ミリワット時 (mWh) と電圧 (V) を入力し、[計算] をクリックしてミリアンペア時 (mAh) を取得します。</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="watts2" type="text" name="Wh"> <span class="units">mWh</span></div>
 				<div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span></div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert2();"></div>	
+				<div class="divinput"><input type="submit" value="計算する" onclick="convert2();"></div>	
 				<div class="divinput"><input size="8" id="mAh2" type="text" name="mAh"> <span class="units">mAh</span></div>
 			</div>
 			<div>
-				<span> The formula is (mWh)/(V) = (mAh).</span>
-				<span> For example, if you have 1500 mWh and a voltage of 5V, you obtain 1500mWh / 5V = 300mAh.</span>
+            	<span> 計算式は (mWh)/(V) = (mAh) です。</span>
+				<span> たとえば、1500 mWh と 5 V の電圧がある場合、1500mWh / 5V = 300mAh が得られます。</span>
 			</div>	
 		</div>
 	</div>
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliamp-hours (mAh) to milliwatt-hours (mWh)</h1>
+       	<h1>ミリアンペア時 (mAh) をミリワット時 (mWh) に変換します</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliamp-hours (mAh) and voltage (V) and click on Calculate to obtain milliwatt-hours (mWh).</span>
+            	<span>ミリアンペア時 (mAh) と電圧 (V) を入力し、[計算] をクリックしてミリワット時 (mWh) を取得します。</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="mAh" type="text" name="mAh"> <span class="units">mAh</span> </div>
 				<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span> </div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>	
+				<div class="divinput"><input type="submit" value="計算する" onclick="convert();"></div>	
 				<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">mWh</span> </div>
 			</div>
 			<div>
-				<span> The formula is (mAh)*(V) = (mWh).</span>
-				<span> For example, if you have a 300mAh battery and a voltage of 5V, you obtain 300mAh * 5V  = 1500 mWh.</span>
+             	<span> 計算式は (mAh)*(V) = (mWh) です。</span>
+				<span> たとえば、300mAh のバッテリーと 5V の電圧がある場合、300mAh * 5V  = 1500 mWh が得られます。</span>
 			</div>
 		</div>
 		<!-- Convert-Formula -->
@@ -108,7 +105,6 @@
 		</script>
 	</div>	
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mwh-mah">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">

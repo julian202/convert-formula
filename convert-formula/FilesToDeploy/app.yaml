@@ -160,6 +160,12 @@ handlers:
   upload: static/mwh-mah/index_de.htm
   mime_type: text/html; charset=UTF-8
   secure: always
+         
+- url: /mwh-mah/ja(.*)
+  static_files: static/mwh-mah/index_ja.htm
+  upload: static/mwh-mah/index_ja.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
   
 - url: /mwh-mah(.*)
   static_files: static/mwh-mah/index.htm
