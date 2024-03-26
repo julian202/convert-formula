@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Convert mWh to mAh. And mAh to mWh.</title>
-<meta name="description" content="Convert milliwatt-hours to milliamp-hours and vice versa.">
-<meta name="keywords" content="Convert, mWh, mAh, hours, milliwatt, milliamps, calculate">
-<meta name="author" content="Convert mWh to mAh">
+<title>将毫瓦时转换为毫安时。毫安时 (mAh) 到毫瓦时 (mWh)。</title>
+<meta name="description" content="将毫瓦时转换为毫安时，反之亦然。">
+<meta name="keywords" content="转换, mWh, mAh, 小时, 毫瓦, 毫安, 计算">
+<meta name="author" content="将 mWh 转换为 mAh">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
 <link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
@@ -21,8 +21,6 @@
   gtag('js', new Date());
   // General Property/Stream:	
   gtag('config', 'G-H2GV6PCN36');
-  // Property/Stream for this specific page:
-  gtag('config', 'G-VP8VRCKBE0');
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
      crossorigin="anonymous"></script>
@@ -34,15 +32,12 @@
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
 	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
-	<a href="https://convert-formula.com/mah-wh/" class="w3-bar-item w3-button">mAh to Wh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<a href="https://convert-formula.com/ah-wh/zh" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mah-wh/zh" class="w3-bar-item w3-button">mAh to Wh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">其他转换</a>
 	<div class="related">Language:</div>
-	<a href="https://convert-formula.com/mwh-mah/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
-	<a href="https://convert-formula.com/mwh-mah/fr" class="w3-bar-item w3-button">Français</a>
-	<a href="https://convert-formula.com/mwh-mah/de" class="w3-bar-item w3-button">Deutsch</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">English</a>
 	<a href="https://convert-formula.com/mwh-mah/ja" class="w3-bar-item w3-button">日本語</a>
-	<a href="https://convert-formula.com/mwh-mah/zh" class="w3-bar-item w3-button">中文</a>
 	<!-- Convert-Formula-Vertical-Multiplex -->
 	<ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:400px"
@@ -56,46 +51,46 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliwatt-hours (mWh) to milliamp-hours (mAh)</h1>
+    	<h1>将毫瓦时 (mWh) 转换为毫安时 (mAh)</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliwatt-hours (mWh) and Voltage (V) and click on Calculate to obtain milliamp-hours (mAh).</span>
+	            <span>输入毫瓦时 (mWh) 和电压 (V)，然后单击“计算”以获得毫安时 (mAh)。</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="watts2" type="text" name="Wh"> <span class="units">mWh</span></div>
 				<div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span></div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert2();"></div>	
+				<div class="divinput"><input type="submit" value="计算" onclick="convert2();"></div>	
 				<div class="divinput"><input size="8" id="mAh2" type="text" name="mAh"> <span class="units">mAh</span></div>
 			</div>
 			<div>
-				<span> The formula is (mWh)/(V) = (mAh).</span>
-				<span> For example, if you have 1500 mWh and a voltage of 5V, you obtain 1500mWh / 5V = 300mAh.</span>
-			</div>	
+            	<span> 公式为 (mWh)/(V) = (mAh)。</span>
+	            <span> 例如，如果您的电量为 1500 mWh，电压为 5V，则您将获得 1500mWh / 5V = 300mAh。</span>
+			</div>
 		</div>
 	</div>
 	<div id="inv" class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-		<h1>Convert milliamp-hours (mAh) to milliwatt-hours (mWh)</h1>
+       	<h1>将毫安时 (mAh) 转换为毫瓦时 (mWh)</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>Insert milliamp-hours (mAh) and voltage (V) and click on Calculate to obtain milliwatt-hours (mWh).</span>
+            	<span>输入毫安时 (mAh) 和电压 (V)，然后单击“计算”以获得毫瓦时 (mWh)。</span>
 			</div>	
 			<div>
 				<div class="divinput"><input size="8" id="mAh" type="text" name="mAh"> <span class="units">mAh</span> </div>
 				<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span> </div>
-				<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>	
+				<div class="divinput"><input type="submit" value="计算" onclick="convert();"></div>	
 				<div class="divinput">	<input size="8" id="watts" type="text" name="Wh"> <span class="units">mWh</span> </div>
 			</div>
 			<div>
-				<span> The formula is (mAh)*(V) = (mWh).</span>
-				<span> For example, if you have a 300mAh battery and a voltage of 5V, you obtain 300mAh * 5V  = 1500 mWh.</span>
+             	<span> 公式为 (mAh)*(V) = (mWh)。</span>
+            	<span> 例如，如果您有一块 300mAh 电池，电压为 5V，您将获得  300mAh * 5V  = 1500 mWh。</span>
 			</div>
 		</div>
 		<!-- Convert-Formula -->
@@ -110,7 +105,6 @@
 		</script>
 	</div>	
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mwh-mah">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">
