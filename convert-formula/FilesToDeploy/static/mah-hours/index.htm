@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Convert mAh (milliamp hours) to Time in Hours</title>
 <meta name="description" content="Convert mAh to time in hours. Calculate duration that milliamp hours lasts.">
 <meta name="keywords" content="Convert, mAh, hours, milliamphours, calculate, time">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="mAh to hours">
+<link rel="canonical" href="https://convert-formula.com/mah-hours"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -14,94 +16,133 @@
   gtag('js', new Date());
   // General Property/Stream:	
   gtag('config', 'G-H2GV6PCN36');
-  // Property/Stream for this specific page:
-  gtag('config', 'G-ZMD5YXCJVG');
 </script>
-<style>
-body { font-size: 120%; }
-div {text-align:center;margin: 22px;font-family: Arial,"Times New Roman",Georgia,Serif;}
-div.boxeddiv{
-	border-color: #73AD21;
-    border-style: solid;
-	border-width: thin;
-    border-radius: 5px;
-	max-width: 500px;
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../styles.css">
+<style>	
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+.container {
+    max-width: 600px;
     margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
-div.numb{
-    margin: 8px;
+.input-group {
+    margin-top: 10px;
+	margin-bottom: 10px;
 }
-input {text-align:center;font-size:1.3em;margin-bottom:5px;margin-top:5px;}
-input.result {padding-left: 1em;}
-.units {font-weight:bold;margin-right: 10px;}
-.upper {margin-top: 0px;font-size: 155%;}
-.ad {margin: 40px;}
-.feedback{text-align:right;font-size: 1em}
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+.inputs {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.result {
+    background-color: #e9ecef;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
 </style>
 </head>
 <body>
-<div>
-<h1 class="upper">
-	<span>Convert mAh (milliamphours) to time in hours</span>
-</h1>	
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:205px;" id="mySidebar">
+	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
+	<hr class="myHr">
+	<div class="related">Related:</div>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">mWh to mAh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<!-- Convert-Formula-Vertical-Multiplex -->
+	<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:400px"
+     data-ad-client="ca-pub-6051400083837233"
+     data-ad-slot="6982044386"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 </div>
-<div>
-	<span>  To calculate how many hours a certain <strong>mAh</strong> lasts, you need to know either the <strong>current</strong>, or the <strong>voltage</strong> and <strong>watts</strong>:</span>
-</div>
-<div>
-	First, fill in this box with your <strong>mAh</strong>:
-</div>
-<div class=boxeddiv>
-	<div class=numb><input size="8" id="mAh" type="text" name="mAh"> <span class="units">mAh</span></div> 
-</div>
-<div>
-	<span>Then fill in the <strong>current</strong> and click on <strong>Calculate</strong>, OR fill in the <strong>voltage</strong> and <strong>watts</strong> and click on <strong>Calculate</strong>.</span>
-</div>
-<div class=boxeddiv>
-	<div class=numb>Current: <input size="8" id="Amps" type="text" name="Amps"> <span class="units">Amps</span></div>
-</div>
-<div>
-	<input type="submit" value="Calculate" onclick="convert();">
-</div>
-<div>
-	<input class=result size="14" id="hours" type="text" name="hours"> <span class="units">Hours</span> 
-</div>
-<div>
-	<span>OR</span>
-</div>
-<div class=boxeddiv>
-	 <div class=numb>Voltage: <input size="8" id="Volts" type="text" name="Volts"> <span class="units">Volts</span>  </div>
-	<div class=numb>Watts: <input size="8" id="Watts" type="text" name="Watts"> <span class="units">Watts</span> </div>
+<div class="w3-main" style="margin-left:205px">
+	<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+    	<h1>Convert mAh (milliamphours) to time in hours</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+				<span>To calculate how many hours a certain <strong>mAh</strong> lasts, you have 2 options:</span>
+			</div>
+			<div class="input-group">
+				<div class="inputs">
+					<label><strong>Option A)</strong> Enter the mAh and the Amps and then click on the "Calculate hours" button:</label>
+					<span class="units">mAh:</span><input size="8" id="mAh" type="text" name="mAh"> 
+					<span class="units">Amps:</span><input size="8" id="Amps" type="text" name="Amps">
+					<input type="submit" value="Calculate Hours" onclick="convert();">
+					<input class="result" size="8" id="hours" type="text" name="hours"> <span class="units">Hours</span> 
+					<div>
+					<span> The formula is (mAh)/(Amps*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
+					</div>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="inputs">
+					<label><strong>Option B)</strong> Enter the mAh, the Volts and the Watts, and click on the button to calculate the hours:</label>
+					<span class="units">mAh:</span><input size="8" id="mAh2" type="text" name="mAh">
+					<span class="units">Volts:</span><input size="8" id="Volts" type="text" name="Volts">
+					<span class="units">Watts:</span><input size="8" id="Watts" type="text" name="Watts">
+					<input type="submit" value="Calculate Hours" onclick="convert2();">
+					<input class="result" size="8" id="hours2" type="text" name="hours2"> <span class="units">Hours</span> 
+					<div><span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span></div>
+				</div>
+			</div>	
+		</div>
+		<!-- Convert-Formula -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-6051400083837233"
+			 data-ad-slot="3557395571"
+			 data-ad-format="auto"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>	
+	<hr>
+	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-wh">convertformula@gmail.com</a></p></div>	
 </div>
 
-<div>
-	<input type="submit" value="Calculate" onclick="convert2();">
-</div>
-<div>
-	<input class=result size="14" id="hours2" type="text" name="hours2"> <span class="units">Hours</span> 
-</div>
-<div>
-	<span> The formula is (mAh)/(Amps*1000) = (hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
-	<div><span> If instead of the current you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span></div>
-</div>	
-<div class="ad">
-	
-</div>	
-<div>
-
-<div class="feedback">	
-<p>
-Got feedback? email: <a href="mailto:suggestionsfeed@gmail.com?Subject=Convert-mAh-h" >suggestionsfeed@gmail.com</a>
-</p>
-</div>	
-
-<div class="ad">
-	
-</div>
 <script  type="text/javascript">
-	function convertold(){document.getElementById("hours").value=(document.getElementById("mAh").value)/(1000*document.getElementById("Amps").value);}
-	function convert2old(){document.getElementById("hours2").value=(document.getElementById("mAh").value*document.getElementById("Volts").value)/(1000*document.getElementById("Watts").value);}
-	
 	function convert(){
 		a=document.getElementById("mAh").value;
 		aContainsComma=a.includes(",");
@@ -125,7 +166,7 @@ Got feedback? email: <a href="mailto:suggestionsfeed@gmail.com?Subject=Convert-m
 		document.getElementById("hours").value=c;	
 	}
 	function convert2(){
-		a=document.getElementById("mAh").value;
+		a=document.getElementById("mAh2").value;
 		aContainsComma=a.includes(",");
 		aContainsDot=a.includes(".");	
 		if (aContainsComma){
@@ -154,15 +195,6 @@ Got feedback? email: <a href="mailto:suggestionsfeed@gmail.com?Subject=Convert-m
 		}		
 		document.getElementById("hours2").value=c;	
 	}
-	
-	/// Old Google Universal Analytics////////
-	//mah-hours
-	//(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	//(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	//m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	//})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	//ga('create', 'UA-35951944-20', 'auto');
-	//ga('send', 'pageview');
 </script>
 </body>
 </html>
