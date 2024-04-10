@@ -47,6 +47,10 @@ body {
     padding: 10px;
     border-radius: 4px;
 }
+input{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
 input[type="text"] {
     padding: 8px;
     border: 1px solid #ccc;
@@ -109,7 +113,7 @@ input[type="submit"]:hover {
 					<span class="units">mAh:</span><input size="8" id="mAh" type="text" name="mAh"> 
 					<span class="units">Amps:</span><input size="8" id="Amps" type="text" name="Amps">
 					<input type="submit" value="Calculate Hours" onclick="convert();">
-					<input class="result" size="8" id="hours" type="text" name="hours"> <span class="units">Hours</span> 
+					<input class="result" size="8" id="hours" type="text" name="hours" readonly><span class="units">Hours</span> 
 					<div>
 					<span> The formula is (mAh)/(Amps*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
 					</div>
@@ -122,7 +126,7 @@ input[type="submit"]:hover {
 					<span class="units">Volts:</span><input size="8" id="Volts" type="text" name="Volts">
 					<span class="units">Watts:</span><input size="8" id="Watts" type="text" name="Watts">
 					<input type="submit" value="Calculate Hours" onclick="convert2();">
-					<input class="result" size="8" id="hours2" type="text" name="hours2"> <span class="units">Hours</span> 
+					<input class="result" size="8" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span> 
 					<div><span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span></div>
 				</div>
 			</div>	
