@@ -34,8 +34,8 @@ body {
     border-radius: 8px;
 }
 .input-group {
-    margin-top: 10px;
-	margin-bottom: 10px;
+    margin-top: 6px;
+	margin-bottom: 11px;
 }
 .input-group label {
     display: block;
@@ -48,8 +48,7 @@ body {
     border-radius: 4px;
 }
 input{
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin: 4px 4px 4px 4px;
 }
 input[type="text"] {
     padding: 8px;
@@ -74,6 +73,19 @@ input[type="submit"]:hover {
     border: none;
     padding: 8px;
     border-radius: 4px;
+}
+.mainContent {
+    margin: 8px 5px 5px 5px;
+}
+.inline-jp {
+    display: inline-block;
+}
+.span-jp{
+	width: 60px;
+	display: inline-block;
+}
+.units {
+    margin-right: 2px;
 }
 </style>
 </head>
@@ -105,15 +117,21 @@ input[type="submit"]:hover {
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>To calculate how many hours a certain <strong>mAh</strong> lasts, you have 2 options:</span>
+				<span>To calculate how many hours a certain <strong>mAh</strong> lasts, you have two options:</span>
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<label><strong>Option A)</strong> Enter the mAh and the Amps and then click on the "Calculate hours" button:</label>
-					<span class="units">mAh:</span><input size="8" id="mAh" type="text" name="mAh"> 
-					<span class="units">Amps:</span><input size="8" id="Amps" type="text" name="Amps">
-					<input type="submit" value="Calculate Hours" onclick="convert();">
-					<input class="result" size="8" id="hours" type="text" name="hours" readonly><span class="units">Hours</span> 
+					<label><strong>Option A)</strong> Enter the mAh and the Amps below and then click on the "Calculate hours" button:</label>
+					
+					<div style="text-align: center">
+					<div class="inline-jp"><span class="units">&nbsp;mAh:</span><input size="5" id="mAh" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units">Amps:</span><input size="5" id="Amps" type="text" name="Amps"></div>
+					<div class="inline-jp">
+						<input type="submit" value="Calculate Hours" onclick="convert();">
+						<div class="inline-jp"><input class="result" size="5" id="hours" type="text" name="hours" readonly><span class="units">Hours</span></div>
+					</div>
+					</div>
+					
 					<div>
 					<span> The formula is (mAh)/(Amps*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
 					</div>
@@ -121,13 +139,20 @@ input[type="submit"]:hover {
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<label><strong>Option B)</strong> Enter the mAh, the Volts and the Watts, and click on the button to calculate the hours:</label>
-					<span class="units">mAh:</span><input size="8" id="mAh2" type="text" name="mAh">
-					<span class="units">Volts:</span><input size="8" id="Volts" type="text" name="Volts">
-					<span class="units">Watts:</span><input size="8" id="Watts" type="text" name="Watts">
-					<input type="submit" value="Calculate Hours" onclick="convert2();">
-					<input class="result" size="8" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span> 
-					<div><span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span></div>
+					<label><strong>Option B)</strong> Enter the mAh, the Volts and the Watts below, and click on the button to calculate the hours:</label>
+					
+					<div style="text-align: center">
+					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh:</span><input size="5" id="mAh2" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units span-jp">Volts:</span><input size="5" id="Volts" type="text" name="Volts"></div>
+					<div class="inline-jp"><span class="units span-jp">Watts:</span><input size="5" id="Watts" type="text" name="Watts"></div>
+					<div class="inline-jp">
+						<input type="submit" value="Calculate Hours" onclick="convert2();">
+						<div class="inline-jp"><input class="result" size="5" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span></div> 
+					</div>
+					</div>
+					<div>
+					<span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span>
+					</div>
 				</div>
 			</div>	
 		</div>
