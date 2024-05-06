@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convert kW to hp</title>
+<meta name="description" content="Convert kW to hp. Calculate horsepower from kilowatts.">
+<meta name="keywords" content="Convert, kW, hp, kilowatts, calculate, horse power">
+<meta name="author" content="Convert kW to hp">
+<link rel="canonical" href="https://convert-formula.com/kw-hp"/>
+<!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // General Property/Stream:	
+  gtag('config', 'G-H2GV6PCN36');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../stylesV3.css">
+</head>
+<body>
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:205px;" id="mySidebar">
+	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;color:#009688"> Convert-Formula.com</a></div>
+	<hr class="myHr">
+	<div class="related">Related:</div>
+	<a href="https://convert-formula.com/kwh-hp" class="w3-bar-item w3-button">kWh to hp</a>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">mWh to mAh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<!-- Convert-Formula-Vertical-Multiplex -->
+	<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:400px"
+     data-ad-client="ca-pub-6051400083837233"
+     data-ad-slot="6982044386"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<div class="w3-main" style="margin-left:205px">
+	<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+    	<h1>Convert kilowatts (kW) to horsepower (hp)</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+				<span> 1 kW = 1.340482 hp.</span>
+			</div>
+			<div>
+				<input size="8" id="kW" type="text" name="kW" onkeyup="convert()"> <span class="units">kW =</span> 
+				<input size="14" id="hp" type="text" name="hp" onkeyup="convertW()"> <span class="units">hp</span> 
+			</div>		
+		</div>
+	</div>
+	<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+    	<h1>Convert horsepower (hp) to kilowatts (kW)</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+				<span> 1 hp = 0.746000 kW.</span>
+			</div>
+			<div>
+				<input size="8" id="hp2" type="text" name="hp2" onkeyup="convert2()"> <span class="units">hp =</span> 
+				<input size="14" id="kW2" type="text" name="kW2" onkeyup="convertW2()"> <span class="units">kW</span> 
+			</div>		
+		</div>	
+		<!-- Convert-Formula -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-6051400083837233"
+			 data-ad-slot="3557395571"
+			 data-ad-format="auto"
+			 data-full-width-responsive="true"></ins>
+		<script>
+			 (adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>	
+	<hr>
+	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-wh">convertformula@gmail.com</a></p></div>	
+</div>
+<script  type="text/javascript">
+	function convert(){
+		idA = "kW";
+		idC = "hp";
+		a=GetA(idA);
+		c=a*1.340482;
+		SetC(c,idA,idC);
+	}
+	function convertW(){
+		idA = "hp";
+		idC = "kW";
+		a=GetA(idA);
+		c=a*0.746;
+		SetC(c,idA,idC);
+	}
+	function convertW2(){
+		idA = "kW2";
+		idC = "hp2";
+		a=GetA(idA);
+		c=a*1.340482;
+		SetC(c,idA,idC);
+	}
+	function convert2(){
+		idA = "hp2";
+		idC = "kW2";
+		a=GetA(idA);
+		c=a*0.746;
+		SetC(c,idA,idC);
+	}
+	function GetA(arg){
+		a=document.getElementById(arg).value;
+		if (a.includes(",")){a=a.replace(/,/g , ".");}		
+		return a;
+	}
+	function SetC(c,argA,arg){
+		c=c.toString();
+		a=document.getElementById(argA).value;
+		if (a.includes(",")){c=c.replace(/\./g , ",");}		
+		document.getElementById(arg).value=c;	
+	}
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+	}
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+	}
+</script>
+</body>
+</html>

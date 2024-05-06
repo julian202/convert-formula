@@ -56,11 +56,11 @@
 					<label><strong>Option A)</strong> Enter the mAh and the Amps below and then click on the "Calculate hours" button:</label>
 					
 					<div style="text-align: center">
-					<div class="inline-jp"><span class="units">&nbsp;mAh:</span><input size="5" id="mAh" type="text" name="mAh"></div>
-					<div class="inline-jp"><span class="units">Amps:</span><input size="5" id="Amps" type="text" name="Amps"></div>
+					<div class="inline-jp"><span class="units">&nbsp;mAh:</span><input size="6" id="mAh" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units">Amps:</span><input size="6" id="Amps" type="text" name="Amps"></div>
 					<div class="inline-jp">
 						<input type="submit" value="Calculate Hours" onclick="convert();">
-						<div class="inline-jp"><input class="result" size="5" id="hours" type="text" name="hours" readonly><span class="units">Hours</span></div>
+						<div class="inline-jp"><input class="result" size="6" id="hours" type="text" name="hours" readonly><span class="units">Hours</span></div>
 					</div>
 					</div>
 					
@@ -74,12 +74,12 @@
 					<label><strong>Option B)</strong> Enter the mAh, the Volts and the Watts below, and click on the button to calculate the hours:</label>
 					
 					<div style="text-align: center">
-					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh:</span><input size="5" id="mAh2" type="text" name="mAh"></div>
-					<div class="inline-jp"><span class="units span-jp">Volts:</span><input size="5" id="Volts" type="text" name="Volts"></div>
-					<div class="inline-jp"><span class="units span-jp">Watts:</span><input size="5" id="Watts" type="text" name="Watts"></div>
+					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh:</span><input size="6" id="mAh2" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units span-jp">Volts:</span><input size="6" id="Volts" type="text" name="Volts"></div>
+					<div class="inline-jp"><span class="units span-jp">Watts:</span><input size="6" id="Watts" type="text" name="Watts"></div>
 					<div class="inline-jp">
 						<input type="submit" value="Calculate Hours" onclick="convert2();">
-						<div class="inline-jp"><input class="result" size="5" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span></div> 
+						<div class="inline-jp"><input class="result" size="6" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span></div> 
 					</div>
 					</div>
 					<div>
@@ -156,6 +156,14 @@
 		}		
 		document.getElementById("hours2").value=c;	
 	}
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+	}
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+	}	
 </script>
 </body>
 </html>

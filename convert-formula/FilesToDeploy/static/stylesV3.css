@@ -82,7 +82,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .mainContent{
 	font-size:1.3em;
-	margin: 8px 5px 5px 5px;
+	margin: 8px 5px 10px 5px;
 }
 input{
 	text-align:center;
@@ -135,10 +135,10 @@ body {
     border-radius: 4px;
 }
 input{
-	margin: 4px 4px 4px 4px;
+	margin: 8px 4px;
 }
 input[type="text"] {
-    padding: 6px;
+    padding: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -146,7 +146,7 @@ input[type="submit"] {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 8px 10px;
+    padding: 5px 12px;
     border-radius: 4px;
     cursor: pointer;
 	margin-left: 5px;
@@ -171,6 +171,10 @@ input[type="submit"]:hover {
 .w3-bar-item{
 	font-size: 1.3em;
 }
+a {
+  color: #0077cc; /* A standard blue color */
+}
+
 
 
 

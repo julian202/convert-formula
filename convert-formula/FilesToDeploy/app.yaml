@@ -29,6 +29,12 @@ handlers:
   mime_type: text/html; charset=UTF-8
   secure: always
   
+- url: /kw-hp(.*)
+  static_files: static/kw-hp/index.htm
+  upload: static/kw-hp/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
 - url: /mah-hours(.*)
   static_files: static/mah-hours/index.htm
   upload: static/mah-hours/index.htm
@@ -263,6 +269,18 @@ handlers:
   mime_type: text/html; charset=UTF-8
   secure: always
   
+- url: /stylesV2.css
+  static_files: static/stylesV2.css
+  upload: static/stylesV2.css
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
+- url: /stylesV3.css
+  static_files: static/stylesV3.css
+  upload: static/stylesV3.css
+  mime_type: text/html; charset=UTF-8
+  secure: always
+    
 - url: /ads(.*)
   static_files: ads.txt
   upload: ads.txt
