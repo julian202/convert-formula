@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Convert kWh to hp</title>
+<title>Convert kWh to Horsepower</title>
 <meta name="description" content="Calculate horsepower from kilowatt-hours and vice versa.">
 <meta name="keywords" content="Convert, kWh, hp, kilowatt hours, calculate, horse power">
 <meta name="author" content="Convert kWh to hp">
@@ -50,14 +50,14 @@
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<div style="margin-bottom: 0.5em;"><span style="font-style:italic">Note: this page converts <b>kWh to hp</b>, if instead you want to convert <b>kW to hp</b> click <a href="https://convert-formula.com/kw-hp">here</a>.</span></div>
-				<span> To convert <b>kWh to hp</b> you need to know the total number of hours that it was running (for example, the maximum number of hours that a battery can run on one charge). Enter the <b>kWh</b> and <b>hours</b> below and click on Calculate to obtain <b>hp</b>:</span>
+				<div style="margin-bottom: 0.5em;"><span style="font-style:italic">Note: this page converts <b>kWh</b> to <b>hp</b>, if instead you want to convert <b>kW</b> to <b>hp</b> click <a href="https://convert-formula.com/kw-hp">here</a>.</span></div>
+				<span> To convert <b>kWh</b> to <b>hp</b> you need to know the total number of hours that it was running (for example, the maximum number of hours that a battery can run on one charge). Enter the <b>kWh</b> and <b>hours</b> below and then click on the "Calculate hp" button:</span>
 			</div>
 			<div>
-				<div class="inline-jp"><input size="7" id="kWh" type="text" name="kWh"> <span class="units">kWh</span></div> 
-				<div class="inline-jp"><input size="7" id="h" type="text" name="h"> <span class="units">hours</span></div> 
+				<div class="inline-jp"><span class="units">kWh:</span><input size="7" id="kWh" type="text" name="kWh"></div> 
+				<div class="inline-jp"><span class="units">Hours:</span><input size="7" id="h" type="text" name="h"></div> 
 				<div class="inline-jp">
-				<input type="submit" value="Calculate" onclick="convertB();">
+				<input type="submit" value="Calculate hp" onclick="convertB();">
 				<div class="inline-jp"><input size="7" id="hp2" type="text" name="hp2" readonly><span class="units">hp</span></div> 
 				</div>
 			</div>
@@ -75,13 +75,13 @@
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span> Enter the <b>hp</b> and <b>hours</b> below and click on Calculate to obtain <b>kWh</b>:  </span>
+				<span> Enter the horsepower <b>(hp)</b> and <b>hours</b> below and then click on the "Calculate kWh" button:  </span>
 			</div>
 			<div>
-				<div class="inline-jp"><input size="7" id="hp3" type="text" name="hp3"> <span class="units">hp</span></div> 
-				<div class="inline-jp"><input size="7" id="h2" type="text" name="h2"> <span class="units">hours</span></div> 
+				<div class="inline-jp"><span class="units">hp:</span><input size="7" id="hp3" type="text" name="hp3"></div> 
+				<div class="inline-jp"><span class="units">Hours:</span><input size="7" id="h2" type="text" name="h2"></div> 
 				<div class="inline-jp">
-				<input type="submit" value="Calculate" onclick="convertC();">
+				<input type="submit" value="Calculate kWh" onclick="convertC();">
 				<div class="inline-jp"><input size="7" id="kWh2" type="text" name="kWh2" readonly> <span class="units">kWh</span></div> 
 				</div>
 			</div>
