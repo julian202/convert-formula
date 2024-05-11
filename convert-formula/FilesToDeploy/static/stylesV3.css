@@ -106,6 +106,9 @@ input{
 .myHr{
 	margin:15px
 }
+.myHr2{
+	margin:5px
+}
 .feedback {text-align:right;color: #009688;font-size:1em; margin:5px}
 
 .container {
