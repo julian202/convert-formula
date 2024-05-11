@@ -48,8 +48,8 @@ handlers:
   secure: always
   
 - url: /w-wh(.*)
-  static_files: static/w-wh/index.htm
-  upload: static/w-wh/index.htm
+  static_files: static/wh-w/index.htm
+  upload: static/wh-w/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always
   
