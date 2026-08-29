@@ -1,4 +1,4 @@
-runtime: nodejs20
+runtime: nodejs22
 
 handlers:
 
@@ -14,7 +14,13 @@ handlers:
 - url: /robots.txt
   static_files: robots.txt
   upload: robots.txt
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/plain
+  secure: always
+
+- url: /sitemap.xml
+  static_files: sitemap.xml
+  upload: sitemap.xml
+  mime_type: application/xml
   secure: always
   
 - url: /wavenumber(.*)
