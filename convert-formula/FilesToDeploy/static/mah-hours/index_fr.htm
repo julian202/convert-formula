@@ -1,39 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mAh to Hours Calculator | Convert Formula</title>
-<meta name="description" content="Convert mAh to time in hours. Calculate duration that milliamp hours lasts.">
-<meta name="keywords" content="Convert, mAh, hours, milliamphours, calculate, time">
-<meta name="author" content="mAh to hours">
+<title>Convertir mAh (milliampères-heures) en temps en heures</title>
+<meta name="description" content="Convertir mAh en temps en heures. Calculer la durée des milliampères-heures.">
+<meta name="keywords" content="Convertir, mAh, heures, milliampères-heures, calculer, temps">
+<meta name="author" content="mAh en heures">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
 <link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
 <link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
 <link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
 <link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
-<link rel="canonical" href="https://convert-formula.com/mah-hours"/>
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Convert Formula">
-<meta property="og:title" content="mAh to Hours Calculator | Convert Formula">
-<meta property="og:description" content="Convert mAh to time in hours. Calculate duration that milliamp hours lasts.">
-<meta property="og:url" content="https://convert-formula.com/mah-hours">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "mAh to Hours Calculator | Convert Formula",
-  "url": "https://convert-formula.com/mah-hours",
-  "applicationCategory": "UtilitiesApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
+<link rel="canonical" href="https://convert-formula.com/mah-hours/fr"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -49,16 +29,16 @@
 </head>
 <body>
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:205px;" id="mySidebar">
-	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Fermer &times;</button>
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;color:#009688;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
-	<div class="related">Related:</div>
-	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
-	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">mWh to mAh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<div class="related">Liens associés:</div>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah en Wh</a>
+	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">mWh en mAh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Autres conversions</a>
     <div class="related">Language:</div>
+	<a href="https://convert-formula.com/mah-hours" class="w3-bar-item w3-button">English</a>
 	<a href="https://convert-formula.com/mah-hours/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
-	<a href="https://convert-formula.com/mah-hours/fr" class="w3-bar-item w3-button">Français</a>
 	<a href="https://convert-formula.com/mah-hours/de" class="w3-bar-item w3-button">Deutsch</a>
 	<a href="https://convert-formula.com/mah-hours/ja" class="w3-bar-item w3-button">日本語</a>
 	<a href="https://convert-formula.com/mah-hours/zh" class="w3-bar-item w3-button">中文</a>
@@ -75,66 +55,64 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-    	<h1>Convert mAh (milliamphours) to time in hours</h1>
+    	<h1>Convertir mAh (milliampères-heures) en temps en heures</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>To calculate how many hours a certain <strong>mAh</strong> lasts, you have two options:</span>
+				<span>Pour calculer combien d'heures durent certains <strong>mAh</strong>, vous avez deux options:</span>
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<span><strong>Option A)</strong> Enter the mAh and the Amps below and then click on the "Calculate hours" button:</span>
+					<span><strong>Option A)</strong> Introduisez les mAh et les Ampères ci-dessous, puis cliquez sur le bouton "Calculer les heures":</span>
 					
 					<div style="text-align: center">
 					<div class="inline-jp"><span class="units">&nbsp;mAh:</span><input size="6" id="mAh" type="text" name="mAh"></div>
-					<div class="inline-jp"><span class="units">Amps:</span><input size="6" id="Amps" type="text" name="Amps"></div>
+					<div class="inline-jp"><span class="units">Ampères:</span><input size="6" id="Amps" type="text" name="Amps"></div>
 					<div class="inline-jp">
-						<input type="submit" value="Calculate Hours" onclick="convert();">
-						<div class="inline-jp"><input class="result" size="6" id="hours" type="text" name="hours" readonly><span class="units">Hours</span></div>
+						<input type="submit" value="Calculer les heures" onclick="convert();">
+						<div class="inline-jp"><input class="result" size="6" id="hours" type="text" name="hours" readonly><span class="units">Heures</span></div>
 					</div>
 					</div>
 					
 					<div>
-					<span> The formula is (mAh)/(Amps*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
+					<span> La formule est (mAh)/(Ampères*1000) = (Heures). Par exemple, si vous avez une batterie de 3000 mAh qui fonctionne à 0,2 Ampères (0,2 Ampères = 200mA), le temps que la batterie durera est (3000)/(0,2*1000) = (3000)/(200)= 15 Heures.</span>
 					</div>
 				</div>
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<span><strong>Option B)</strong> Enter the mAh, the Volts and the Watts below, and click on the button to calculate the hours:</span>
+					<span><strong>Option B)</strong> Introduisez les mAh, les Volts et les Watts ci-dessous, puis cliquez sur le bouton pour calculer les heures:</span>
 					
 					<div style="text-align: center">
 					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh:</span><input size="6" id="mAh2" type="text" name="mAh"></div>
 					<div class="inline-jp"><span class="units span-jp">Volts:</span><input size="6" id="Volts" type="text" name="Volts"></div>
 					<div class="inline-jp"><span class="units span-jp">Watts:</span><input size="6" id="Watts" type="text" name="Watts"></div>
 					<div class="inline-jp">
-						<input type="submit" value="Calculate Hours" onclick="convert2();">
-						<div class="inline-jp"><input class="result" size="6" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span></div> 
+						<input type="submit" value="Calculer les heures" onclick="convert2();">
+						<div class="inline-jp"><input class="result" size="6" id="hours2" type="text" name="hours2" readonly><span class="units">Heures</span></div> 
 					</div>
 					</div>
 					<div>
-					<span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span>
+					<span> Si vous avez la tension et les watts, la formule est (mAh*Volts)/(Watts*1000) = (Heures). Par exemple, si vous avez une batterie de 3000 mAh qui fonctionne à 5 Volts et 15 Watts, le temps que la batterie durera est (3000*5)/(15*1000) = 1 Heure.</span>
 					</div>
 				</div>
 			</div>	
 		</div>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
-		crossorigin="anonymous"></script>
-		<!-- Convert-Formula3 -->
-		<ins class="adsbygoogle"
-			style="display:block"
-			data-ad-client="ca-pub-6051400083837233"
-			data-ad-slot="5556823597"
-			data-ad-format="auto"
-			data-full-width-responsive="true"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>	
+	<!-- Convert-Formula -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-6051400083837233"
+		 data-ad-slot="3557395571"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-hours">convertformula@gmail.com</a></p></div>	
+	<div class=feedback><p class=feedback>Pour toute question, envoyez un e-mail à: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-hours-fr">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">

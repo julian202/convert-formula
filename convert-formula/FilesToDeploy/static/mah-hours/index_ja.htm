@@ -1,39 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mAh to Hours Calculator | Convert Formula</title>
-<meta name="description" content="Convert mAh to time in hours. Calculate duration that milliamp hours lasts.">
-<meta name="keywords" content="Convert, mAh, hours, milliamphours, calculate, time">
-<meta name="author" content="mAh to hours">
+<title>mAh（ミリアンペア時）を時間に変換</title>
+<meta name="description" content="mAhを時間に変換します。ミリアンペア時の持続時間を計算します。">
+<meta name="keywords" content="変換, mAh, 時間, ミリアンペア時, 計算, 時間">
+<meta name="author" content="mAhから時間へ">
 <link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
 <link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
 <link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
 <link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
 <link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
 <link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
-<link rel="canonical" href="https://convert-formula.com/mah-hours"/>
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Convert Formula">
-<meta property="og:title" content="mAh to Hours Calculator | Convert Formula">
-<meta property="og:description" content="Convert mAh to time in hours. Calculate duration that milliamp hours lasts.">
-<meta property="og:url" content="https://convert-formula.com/mah-hours">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "mAh to Hours Calculator | Convert Formula",
-  "url": "https://convert-formula.com/mah-hours",
-  "applicationCategory": "UtilitiesApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
+<link rel="canonical" href="https://convert-formula.com/mah-hours/ja"/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
 <script>
@@ -49,18 +29,18 @@
 </head>
 <body>
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:205px;" id="mySidebar">
-	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">閉じる &times;</button>
 	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;color:#009688;"> Convert-Formula.com</a></div>
 	<hr class="myHr">
-	<div class="related">Related:</div>
+	<div class="related">関連：</div>
 	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
 	<a href="https://convert-formula.com/mwh-mah" class="w3-bar-item w3-button">mWh to mAh</a>
-	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">その他の変換</a>
     <div class="related">Language:</div>
+	<a href="https://convert-formula.com/mah-hours" class="w3-bar-item w3-button">English</a>
 	<a href="https://convert-formula.com/mah-hours/es" class="w3-bar-item w3-button">Espa&ntilde;ol</a>
 	<a href="https://convert-formula.com/mah-hours/fr" class="w3-bar-item w3-button">Français</a>
 	<a href="https://convert-formula.com/mah-hours/de" class="w3-bar-item w3-button">Deutsch</a>
-	<a href="https://convert-formula.com/mah-hours/ja" class="w3-bar-item w3-button">日本語</a>
 	<a href="https://convert-formula.com/mah-hours/zh" class="w3-bar-item w3-button">中文</a>
 	<!-- Convert-Formula-Vertical-Multiplex -->
 	<ins class="adsbygoogle"
@@ -75,66 +55,64 @@
 	<div class="w3-teal">
 	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
 	  <div class="w3-container">
-    	<h1>Convert mAh (milliamphours) to time in hours</h1>
+    	<h1>mAh（ミリアンペア時）を時間に変換</h1>
 	  </div>
 	</div>
 	<div class="w3-container">
 		<div class="mainContent">
 			<div>
-				<span>To calculate how many hours a certain <strong>mAh</strong> lasts, you have two options:</span>
+				<span>特定の<strong>mAh</strong>が何時間持続するかを計算するには、2つの選択肢があります：</span>
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<span><strong>Option A)</strong> Enter the mAh and the Amps below and then click on the "Calculate hours" button:</span>
+					<span><strong>オプションA）</strong> 以下にmAhとアンペアを入力し、「時間を計算」ボタンをクリックしてください：</span>
 					
 					<div style="text-align: center">
-					<div class="inline-jp"><span class="units">&nbsp;mAh:</span><input size="6" id="mAh" type="text" name="mAh"></div>
-					<div class="inline-jp"><span class="units">Amps:</span><input size="6" id="Amps" type="text" name="Amps"></div>
+					<div class="inline-jp"><span class="units">&nbsp;mAh：</span><input size="6" id="mAh" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units">アンペア：</span><input size="6" id="Amps" type="text" name="Amps"></div>
 					<div class="inline-jp">
-						<input type="submit" value="Calculate Hours" onclick="convert();">
-						<div class="inline-jp"><input class="result" size="6" id="hours" type="text" name="hours" readonly><span class="units">Hours</span></div>
+						<input type="submit" value="時間を計算" onclick="convert();">
+						<div class="inline-jp"><input class="result" size="6" id="hours" type="text" name="hours" readonly><span class="units">時間</span></div>
 					</div>
 					</div>
 					
 					<div>
-					<span> The formula is (mAh)/(Amps*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 0.2 Amps (0.2Amps = 200mA), then the time that the battery will last for is (3000)/(0.2*1000) = (3000)/(200)= 15 Hours.</span>
+					<span> 公式は（mAh）/（アンペア*1000）=（時間）です。例えば、3000 mAhのバッテリーが0.2アンペア（0.2アンペア = 200mA）で動作する場合、バッテリーの持続時間は（3000）/（0.2*1000）=（3000）/（200）= 15時間となります。</span>
 					</div>
 				</div>
 			</div>
 			<div class="input-group">
 				<div class="inputs">
-					<span><strong>Option B)</strong> Enter the mAh, the Volts and the Watts below, and click on the button to calculate the hours:</span>
+					<span><strong>オプションB）</strong> 以下にmAh、ボルト、ワットを入力し、ボタンをクリックして時間を計算してください：</span>
 					
 					<div style="text-align: center">
-					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh:</span><input size="6" id="mAh2" type="text" name="mAh"></div>
-					<div class="inline-jp"><span class="units span-jp">Volts:</span><input size="6" id="Volts" type="text" name="Volts"></div>
-					<div class="inline-jp"><span class="units span-jp">Watts:</span><input size="6" id="Watts" type="text" name="Watts"></div>
+					<div class="inline-jp"><span class="units span-jp">&nbsp;&nbsp;mAh：</span><input size="6" id="mAh2" type="text" name="mAh"></div>
+					<div class="inline-jp"><span class="units span-jp">ボルト：</span><input size="6" id="Volts" type="text" name="Volts"></div>
+					<div class="inline-jp"><span class="units span-jp">ワット：</span><input size="6" id="Watts" type="text" name="Watts"></div>
 					<div class="inline-jp">
-						<input type="submit" value="Calculate Hours" onclick="convert2();">
-						<div class="inline-jp"><input class="result" size="6" id="hours2" type="text" name="hours2" readonly><span class="units">Hours</span></div> 
+						<input type="submit" value="時間を計算" onclick="convert2();">
+						<div class="inline-jp"><input class="result" size="6" id="hours2" type="text" name="hours2" readonly><span class="units">時間</span></div> 
 					</div>
 					</div>
 					<div>
-					<span> If you have voltage and watts, then the formula is (mAh*Volts)/(Watts*1000) = (Hours). For example, if you have a 3000 mAh battery that runs at 5 Volts and 15 Watts, then the time that the battery will last for is (3000*5)/(15*1000) = 1 Hours.</span>
+					<span> 電圧とワットがある場合、公式は（mAh*ボルト）/（ワット*1000）=（時間）です。例えば、3000 mAhのバッテリーが5ボルトで15ワットで動作する場合、バッテリーの持続時間は（3000*5）/（15*1000）= 1時間となります。</span>
 					</div>
 				</div>
 			</div>	
 		</div>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
-		crossorigin="anonymous"></script>
-		<!-- Convert-Formula3 -->
-		<ins class="adsbygoogle"
-			style="display:block"
-			data-ad-client="ca-pub-6051400083837233"
-			data-ad-slot="5556823597"
-			data-ad-format="auto"
-			data-full-width-responsive="true"></ins>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>	
+	<!-- Convert-Formula -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-6051400083837233"
+		 data-ad-slot="3557395571"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
 	<hr>
-	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-hours">convertformula@gmail.com</a></p></div>	
+	<div class=feedback><p class=feedback>ご質問がある場合は、以下のメールアドレスにお問い合わせください： <a href="mailto:convertformula@gmail.com?Subject=Convert-mah-hours-ja">convertformula@gmail.com</a></p></div>	
 </div>
 
 <script  type="text/javascript">

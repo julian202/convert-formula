@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /static/
+Disallow: /highlight-classes-in-css
 
 Sitemap: https://convert-formula.com/sitemap.xml

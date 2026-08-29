@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://convert-formula.com</loc>
     <lastmod>2026-08-29</lastmod>
@@ -9,121 +10,289 @@
     <loc>https://convert-formula.com/ah-wh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-wh/es</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-wh/fr</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-wh/de</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-wh/ja</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-wh/zh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/ah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/ah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/ah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/ah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/ah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/ah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/ah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh/es</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh/fr</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh/de</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh/ja</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-wh/zh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-wh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-wh/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-wh/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-wh/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-wh/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-wh/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-wh"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah/es</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah/fr</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah/de</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah/ja</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mwh-mah/zh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mwh-mah"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mwh-mah/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mwh-mah/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mwh-mah/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mwh-mah/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mwh-mah/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mwh-mah"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours/es</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours/fr</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours/de</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours/ja</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/mah-hours/zh</loc>
     <lastmod>2026-08-29</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://convert-formula.com/mah-hours"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://convert-formula.com/mah-hours/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://convert-formula.com/mah-hours/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://convert-formula.com/mah-hours/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://convert-formula.com/mah-hours/ja"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://convert-formula.com/mah-hours/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://convert-formula.com/mah-hours"/>
   </url>
   <url>
     <loc>https://convert-formula.com/ah-mah</loc>

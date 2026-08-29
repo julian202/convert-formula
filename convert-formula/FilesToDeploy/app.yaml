@@ -84,8 +84,8 @@ handlers:
   secure: always
   
 - url: /w-wh(.*)
-  static_files: static/wh-w/index.htm
-  upload: static/wh-w/index.htm
+  static_files: static/w-wh/index.htm
+  upload: static/w-wh/index.htm
   mime_type: text/html; charset=UTF-8
   secure: always
   
@@ -302,31 +302,31 @@ handlers:
 - url: /styles.css
   static_files: static/styles.css
   upload: static/styles.css
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/css
   secure: always
   
 - url: /stylesV2.css
   static_files: static/stylesV2.css
   upload: static/stylesV2.css
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/css
   secure: always
   
 - url: /stylesV3.css
   static_files: static/stylesV3.css
   upload: static/stylesV3.css
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/css
   secure: always
     
 - url: /stylesV4.css
   static_files: static/stylesV4.css
   upload: static/stylesV4.css
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/css
   secure: always
     
 - url: /ads(.*)
   static_files: ads.txt
   upload: ads.txt
-  mime_type: text/html; charset=UTF-8
+  mime_type: text/plain
   secure: always
   
 - url: /.*
