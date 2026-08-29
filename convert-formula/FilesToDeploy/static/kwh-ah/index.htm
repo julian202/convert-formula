@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kWh to Ah Calculator | Convert Formula</title>
+<meta name="description" content="Convert kilowatt-hours (kWh) to amp-hours (Ah) and vice versa. Uses battery voltage. Common for solar, RV, and home batteries.">
+<meta name="keywords" content="Convert,kWh,Ah,kilowatt hour,amp hour,battery,solar,48V,12V,24V">
+<meta name="author" content="Convert-Formula.com">
+<link rel="canonical" href="https://convert-formula.com/kwh-ah"/>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Convert Formula">
+<meta property="og:title" content="kWh to Ah Calculator | Convert Formula">
+<meta property="og:description" content="Convert kilowatt-hours (kWh) to amp-hours (Ah) and vice versa. Uses battery voltage. Common for solar, RV, and home batteries.">
+<meta property="og:url" content="https://convert-formula.com/kwh-ah">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "kWh to Ah Calculator | Convert Formula",
+  "url": "https://convert-formula.com/kwh-ah",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GV6PCN36"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H2GV6PCN36');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6051400083837233"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:205px;" id="mySidebar">
+	<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+	<div class="homeTitle"><a href="https://convert-formula.com" style="text-decoration:none;"> Convert-Formula.com</a></div>
+	<hr class="myHr">
+	<div class="related">Related:</div>
+	<a href="https://convert-formula.com/ah-wh" class="w3-bar-item w3-button">Ah to Wh</a>
+	<a href="https://convert-formula.com/mah-wh" class="w3-bar-item w3-button">mAh to Wh</a>
+	<a href="https://convert-formula.com" class="w3-bar-item w3-button">Other Conversions</a>
+	<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:400px"
+     data-ad-client="ca-pub-6051400083837233"
+     data-ad-slot="6982044386"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+<div class="w3-main" style="margin-left:205px">
+	<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+    	<h1>How to convert kilowatt-hours (kWh) to amp-hours (Ah)</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+	            <span>Insert the kilowatt-hours (kWh) and battery voltage (V) below and click Calculate to obtain amp-hours (Ah).</span>
+			</div>
+			<div>
+	            <div class="divinput"><input size="8" id="kwh" type="text" name="kWh"> <span class="units">kWh</span></div>
+            	<div class="divinput"><input size="8" id="volts" type="text" name="V"> <span class="units">V</span>
+            		<input type="button" value="12V" onclick="setV('volts','12')">
+            		<input type="button" value="24V" onclick="setV('volts','24')">
+            		<input type="button" value="48V" onclick="setV('volts','48')">
+            	</div>
+            	<div class="divinput"><input type="submit" value="Calculate" onclick="convert();"></div>
+            	<div class="divinput"><input size="8" id="ah" type="text" name="Ah"> <span class="units">Ah</span></div>
+			</div>
+			<div>
+            	<span> The formula is (kWh)&times;1000 / (V) = (Ah).</span>
+	            <span> For example, 10 kWh at 48V is 10&times;1000 / 48 = 208.33 Ah.</span>
+			</div>
+		</div>
+	</div>
+	<div id="inv" class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+       	<h1>How to convert amp-hours (Ah) to kilowatt-hours (kWh)</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div class="mainContent">
+			<div>
+            	<span>Insert amp-hours (Ah) and battery voltage (V) below and click Calculate to obtain kilowatt-hours (kWh).</span>
+			</div>
+			<div>
+	            <div class="divinput"><input size="8" id="ah2" type="text" name="Ah"> <span class="units">Ah</span></div>
+	            <div class="divinput"><input size="8" id="volts2" type="text" name="V"> <span class="units">V</span>
+	            	<input type="button" value="12V" onclick="setV('volts2','12')">
+	            	<input type="button" value="24V" onclick="setV('volts2','24')">
+	            	<input type="button" value="48V" onclick="setV('volts2','48')">
+	            </div>
+	            <div class="divinput"><input type="submit" value="Calculate" onclick="convert2();"></div>
+	            <div class="divinput"><input size="8" id="kwh2" type="text" name="kWh"> <span class="units">kWh</span></div>
+			</div>
+			<div>
+             	<span> The formula is (Ah)&times;(V) / 1000 = (kWh).</span>
+            	<span> For example, 200 Ah at 48V is 200&times;48 / 1000 = 9.6 kWh.</span>
+			</div>
+		</div>
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-6051400083837233"
+		 data-ad-slot="3557395571"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
+	<hr>
+	<div class=feedback><p class=feedback>For questions email: <a href="mailto:convertformula@gmail.com?Subject=Convert-kwh-ah">convertformula@gmail.com</a></p></div>
+</div>
+
+<script type="text/javascript">
+	function parseNum(id){
+		var a = document.getElementById(id).value;
+		var usedComma = a.indexOf(",") > -1;
+		if (usedComma) a = a.replace(/,/g, ".");
+		return { n: parseFloat(a), usedComma: usedComma };
+	}
+	function showNum(id, value, usedComma){
+		var c = (Math.round(value * 100) / 100).toString();
+		if (usedComma) c = c.replace(/\./g, ",");
+		document.getElementById(id).value = c;
+	}
+	function setV(id, v){
+		document.getElementById(id).value = v;
+	}
+	function convert(){
+		var k = parseNum("kwh");
+		var v = parseNum("volts");
+		if (!isFinite(k.n) || !isFinite(v.n) || v.n === 0) return;
+		showNum("ah", (k.n * 1000) / v.n, k.usedComma || v.usedComma);
+	}
+	function convert2(){
+		var a = parseNum("ah2");
+		var v = parseNum("volts2");
+		if (!isFinite(a.n) || !isFinite(v.n)) return;
+		showNum("kwh2", (a.n * v.n) / 1000, a.usedComma || v.usedComma);
+	}
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+	}
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+	}
+</script>
+</body>
+</html>
