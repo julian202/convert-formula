@@ -29,6 +29,12 @@ handlers:
   mime_type: text/html; charset=UTF-8  
   secure: always  
 
+- url: /kwh-ah(.*)
+  static_files: static/kwh-ah/index.htm
+  upload: static/kwh-ah/index.htm
+  mime_type: text/html; charset=UTF-8
+  secure: always
+  
 - url: /kwh-hp(.*)
   static_files: static/kwh-hp/index.htm
   upload: static/kwh-hp/index.htm
